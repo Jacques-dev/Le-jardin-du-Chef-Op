@@ -19,7 +19,7 @@ export function setTitle(t) { document.title = t ? `${t} · Le jardin du Chef Op
 
 export function techCard(t, force = 0) {
   const c = C[t.cat];
-  return `<div class="card-w"><a class="card" href="#/t/${t.id}" style="--c:${c.couleur}">
+  return `<div class="card-w" data-t="${t.id}"><a class="card" href="#/t/${t.id}" style="--c:${c.couleur}">
     <div class="thumb">${illustration(t)}</div>
     <div class="body"><span class="tag" style="--c:${c.couleur}">${c.court}</span><h3>${esc(t.nom)}</h3><span class="en">${esc(t.en)}</span><p>${esc(t.resume)}</p></div>
     ${force ? `<span class="strength" title="Force du lien : ${force}/3">${[1, 2, 3].map(k => `<i class="${k <= force ? 'on' : ''}"></i>`).join('')}</span>` : ''}

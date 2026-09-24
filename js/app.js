@@ -81,6 +81,48 @@ function shell() {
   $('#installBtn').onclick = async () => { if (!deferred) return; deferred.prompt(); await deferred.userChoice; deferred = null; $('#installBtn').classList.remove('show'); };
 }
 
+// ---------------- Retour sur la fiche cliquée ----------------
+let fiche = null;        // { path, id, top, railLeft } : la carte cliquée et sa position dans la fenêtre
+let prevPath = null;     // chemin quitté, renseigné en fin de route()
+let scrollAfter = null;  // défilement posé par une vue, exécuté par route() après le rendu
+const CHROME = 120;      // même décalage que .cat-block { scroll-margin-top }
+
+// Capture : on lit la position avant toute modification du DOM, le hashchange n'a pas encore eu lieu.
+document.addEventListener('click', e => {
+  const w = e.target.closest?.('a.card[href^="#/t/"]')?.closest('.card-w');
+  if (!w) return;
+  const rail = w.closest('.rail');
+  fiche = {
+    path: location.hash.slice(1).split('?')[0] || '/',
+    id: w.dataset.t,
+    top: w.getBoundingClientRect().top,
+    railLeft: rail ? rail.scrollLeft : null,
+  };
+}, true);
+
+// Rend une fonction de repositionnement sur la carte d'où l'on vient, ou null.
+function retourFiche(v, q, path) {
+  const exact = !!fiche && fiche.path === path && !!prevPath?.startsWith('/t/');
+  const id = q.get('t') || (exact ? fiche.id : null);
+  if (!id) return null;
+  const el = $(`.card-w[data-t="${id}"]`, v);
+  if (!el) return null;
+  const memeCarte = exact && fiche.id === id;
+  const top = memeCarte ? fiche.top : CHROME;
+  return () => {
+    const rail = el.closest('.rail');
+    if (rail) rail.scrollLeft = memeCarte && fiche.railLeft != null ? fiche.railLeft
+      : Math.max(0, rail.scrollLeft + el.getBoundingClientRect().left - rail.getBoundingClientRect().left - 8);
+    let n = 0;
+    const cale = () => {                                 // content-visibility : les hauteurs réelles
+      const d = el.getBoundingClientRect().top - top;    // arrivent sur deux ou trois frames
+      if (Math.abs(d) > 1) window.scrollTo(0, Math.max(0, window.scrollY + d));
+      if (++n < 4) requestAnimationFrame(cale);
+    };
+    cale();
+  };
+}
+
 // ---------------- Routeur ----------------
 let cleanup = null;
 const routes = [
@@ -103,6 +145,7 @@ function route() {
   const q = new URLSearchParams(qs);
   if (cleanup) { try { cleanup(); } catch { } cleanup = null; }
   const view = $('#view');
+  scrollAfter = null;
   let found = false;
   for (const [re, fn] of routes) {
     const m = path.match(re);
@@ -114,7 +157,9 @@ function route() {
     a.classList.toggle('on', n ? n.match.test(path) : a.getAttribute('href') === '#' + path);
   });
   $('#labBtn')?.classList.toggle('on', path === '/labo');
-  if (!history.state?.keepScroll) window.scrollTo(0, 0);
+  if (scrollAfter) { const f = scrollAfter; scrollAfter = null; f(); }
+  else if (!history.state?.keepScroll) window.scrollTo(0, 0);
+  prevPath = path;
 }
 
 // ---------------- Accueil ----------------
@@ -223,6 +268,7 @@ function intentionView(v, q, id) {
     btns.forEach(btn => btn.onclick = () => rail.scrollBy({ left: +btn.dataset.rail * rail.clientWidth * 0.85, behavior: 'smooth' }));
     rail.addEventListener('scroll', upd, { passive: true }); new ResizeObserver(upd).observe(rail); upd();
   });
+  scrollAfter = retourFiche(v, q, '/intention/' + id);
 }
 function voisines(id) {
   const mine = new Set(PAR_INTENTION[id].filter(x => x.f >= 2).map(x => x.t.id));
@@ -241,7 +287,8 @@ function techniquesView(v, q) {
         <h2><span class="dot"></span>${c.nom}</h2><p>${TECHNIQUES.filter(t => t.cat === c.id).length} fiches</p>
         <div class="grid">${TECHNIQUES.filter(t => t.cat === c.id).map(t => techCard(t)).join('')}</div></section>`).join('')).join('')}`;
   v.querySelectorAll('[data-jump]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); $('#cat-' + a.dataset.jump).scrollIntoView({ behavior: 'smooth' }); }));
-  const c = q.get('cat'); if (c) setTimeout(() => $('#cat-' + c)?.scrollIntoView(), 50);
+  const c = q.get('cat');
+  scrollAfter = retourFiche(v, q, '/techniques') || (c ? () => $('#cat-' + c, v)?.scrollIntoView() : null);
 }
 
 function techniqueView(v, q, id) {
@@ -255,7 +302,7 @@ function techniqueView(v, q, id) {
   const tabs = isLight ? [['plan', 'Plan de feu'], ['3d', 'Rendu 3D']] : v3 ? [['illus', 'Schéma'], ['3d', 'Rendu 3D']] : null;
   const addHref = `#/composer?${encodeSel({ ...store.composer, [t.cat]: t.id })}`;
   v.innerHTML = `
-  <a class="crumb" href="#/techniques?cat=${t.cat}">${ICONS.back.replace('<svg', '<svg width="14" height="14"')} ${c.nom}</a>
+  <a class="crumb" href="#/techniques?t=${t.id}">${ICONS.back.replace('<svg', '<svg width="14" height="14"')} ${c.nom}</a>
   <div class="fiche-head">
     <div class="visual wide" id="vis">
       ${tabs ? `<div class="visual-tabs" role="tablist">${tabs.map(([k, l], n) => `<button role="tab" data-tab="${k}" class="${n === 0 ? 'on' : ''}">${l}</button>`).join('')}</div>` : ''}
@@ -302,7 +349,7 @@ function techniqueView(v, q, id) {
 }
 
 // ---------------- Favoris ----------------
-function favorisView(v) {
+function favorisView(v, q) {
   setTitle('Favoris');
   const f = store.favs();
   const ints = INTENTIONS.filter(i => f.has(i.id)), techs = TECHNIQUES.filter(t => f.has(t.id));
@@ -310,6 +357,7 @@ function favorisView(v) {
     ${!ints.length && !techs.length ? `<div class="empty">Aucun favori pour l'instant. Touchez l'étoile ${ICONS.star.replace('<svg', '<svg width="16" height="16" style="vertical-align:-3px"')} sur une fiche pour la retrouver ici.</div>` : ''}
     ${ints.length ? `<section class="section"><h2>Intentions</h2><div class="chips">${ints.map(i => intChip(i)).join('')}</div></section>` : ''}
     ${techs.length ? `<section class="section"><h2>Techniques</h2><div class="grid">${techs.map(t => techCard(t)).join('')}</div></section>` : ''}`;
+  scrollAfter = retourFiche(v, q, '/favoris');
 }
 
 // ---------------- À propos ----------------
