@@ -1,6 +1,6 @@
 # Cartographie — Le jardin du Chef Op
 
-40 intentions · 111 techniques · force des liens de 1 (faible) à 3 (fort).
+41 intentions · 111 techniques · force des liens de 1 (faible) à 3 (fort).
 
 ## Intentions
 
@@ -9,9 +9,9 @@
 - **Domination, puissance** — Le personnage impose sa présence : il occupe le cadre, surplombe le spectateur ou les autres personnages, contrôle l'espace.
   - Techniques fortes : Contre-plongée (3), Contre-plongée extrême (ras du sol) (3), Centrage & symétrie (2), Déséquilibre des masses (2)
 - **Vulnérabilité, fragilité** — Le personnage est exposé, petit, sans protection. Le spectateur a envie de le protéger ou craint pour lui.
-  - Techniques fortes : Plongée (3), Espace négatif (2), Très grand plan d’ensemble (2)
+  - Techniques fortes : Plongée (3), Espace négatif (2), Plongée totale (vue zénithale) (2), Très grand plan d’ensemble (2)
 - **Oppression, écrasement** — Un poids pèse sur le personnage : le décor, la société, une autorité, le destin. L'espace se referme sur lui.
-  - Techniques fortes : Espace négatif (2), Horizon haut (sol dominant) (2), Long téléobjectif (2), Lumière zénithale (2), Plongée (2), Plongée totale (vue zénithale) (2), Très grand plan d’ensemble (2)
+  - Techniques fortes : Plongée totale (vue zénithale) (3), Espace négatif (2), Horizon haut (sol dominant) (2), Long téléobjectif (2), Lumière zénithale (2), Plongée (2), Très grand plan d’ensemble (2)
 - **Menace, danger** — Quelque chose de dangereux est présent ou imminent, dans le champ ou hors champ.
   - Techniques fortes : Contre-plongée extrême (ras du sol) (3), Éclairage par-dessous (3), Cadrage à contre-regard (2), Caméra subjective (2), Contre-plongée (2), Éclairage divisé (split) (2), Low key (2), Lumière dure (2), Lumière intermittente (2), Lumière zénithale (2), Plan débullé (cadre penché) (2), Regard caméra (2), Silhouette (2), Steadicam / gimbal (2)
 - **Héroïsme, grandeur** — Le personnage s'élève, devient une figure. Le plan le magnifie, parfois jusqu'au mythe.
@@ -30,13 +30,13 @@
 - **Mélancolie, nostalgie** — Une tristesse douce, tournée vers ce qui est perdu ou ce qui passe. Le temps semble suspendu.
   - Techniques fortes : Heure bleue (3), Heure dorée (3), Éclairage court (short) (2), Éclairage Rembrandt (2), Espace négatif (2), Flare & diffusion (2), Lumière chaude (2), Lumière de fenêtre (2), Lumière tachetée (cookie) (2), Nuit lunaire (2)
 - **Angoisse, anxiété** — Un malaise diffus, intérieur, sans menace clairement identifiée. Le personnage étouffe.
-  - Techniques fortes : Cadrage à contre-regard (3), Cadrage serré (coupe du visage) (3), Approche lente (push-in) (2), Caméra à l’épaule (2), Caméra harnachée (Snorricam) (2), Gros plan (2), Low key (2), Plan débullé (cadre penché) (2), Travelling compensé (effet Vertigo) (2), Très gros plan (2)
+  - Techniques fortes : Cadrage à contre-regard (3), Cadrage serré (coupe du visage) (3), Plan débullé (cadre penché) (3), Approche lente (push-in) (2), Caméra à l’épaule (2), Caméra harnachée (Snorricam) (2), Gros plan (2), Low key (2), Travelling compensé (effet Vertigo) (2), Très gros plan (2)
 - **Peur, terreur** — Une réaction à un danger concret : sursaut, fuite, sidération.
   - Techniques fortes : Travelling compensé (effet Vertigo) (3), Caméra subjective (2), Caméra tremblée (shaky cam) (2), Éclairage par-dessous (2), Lumière intermittente (2)
 - **Joie, légèreté** — Énergie positive, respiration, humour, insouciance.
   - Techniques fortes : High key (3), Éclairage large (broad) (2), Panoramique filé (2)
 - **Colère, tension** — Une énergie contenue ou explosive. Le cadre se durcit, se resserre, vibre.
-  - Techniques fortes : Cadrage serré (coupe du visage) (2), Éclairage croisé (2), Lumière dure (2), Lumière latérale rasante (2), Très gros plan (2)
+  - Techniques fortes : Très gros plan (3), Cadrage serré (coupe du visage) (2), Éclairage croisé (2), Lumière dure (2), Lumière latérale rasante (2)
 - **Désir, sensualité** — Attirance, regard qui caresse, peau, lenteur. Le corps devient sujet.
   - Techniques fortes : Couleurs saturées (néon) (2), Éclairage coquillage (clamshell) (2), Éclairage papillon (Paramount) (2), Gros plan (2), Heure dorée (2), Téléobjectif court (portrait) (2), Très gros plan (2)
 - **Sérénité, apaisement** — Calme, équilibre, harmonie avec le lieu. Rien ne presse.
@@ -80,7 +80,7 @@
 - **Lien, connexion** — Deux personnages (ou plus) se rejoignent : complicité, amour, alliance.
   - Techniques fortes : Plan à deux (3), Amorce épaule (semi-subjective) (2), Angle neutre (hauteur des yeux) (2), Champ-contrechamp (2), Plan rapproché poitrine (2), Travelling circulaire (2)
 - **Conflit, opposition** — Deux forces s'affrontent. Le cadre sépare, oppose, met en tension.
-  - Techniques fortes : Amorce épaule (semi-subjective) (2), Champ-contrechamp (2), Contraste chaud / froid (2), Déséquilibre des masses (2), Diagonales & obliques (2), Éclairage croisé (2), Éclairage divisé (split) (2), Hauteur hanches (2), Lumière dure (2), Personnage de profil (2), Plan à deux (2), Plan américain (2), Split diopter (double netteté) (2)
+  - Techniques fortes : Amorce épaule (semi-subjective) (3), Champ-contrechamp (2), Contraste chaud / froid (2), Déséquilibre des masses (2), Diagonales & obliques (2), Éclairage croisé (2), Éclairage divisé (split) (2), Hauteur hanches (2), Lumière dure (2), Personnage de profil (2), Plan à deux (2), Plan américain (2), Split diopter (double netteté) (2)
 - **Curiosité, découverte** — L'image retient une partie de l'information : le spectateur a envie de voir, de chercher, de découvrir ce qui est caché.
   - Techniques fortes : Amorce (premier plan) (3), Personnage de dos (2)
 - **Enfermement, huis clos** — Le personnage est pris au piège d'un lieu, d'une situation, de lui-même.
@@ -93,11 +93,13 @@
 - **Urgence, chaos** — Tout va trop vite, le contrôle échappe. Action, panique, confusion.
   - Techniques fortes : Caméra à l’épaule (3), Caméra tremblée (shaky cam) (3), Lumière intermittente (3), Diagonales & obliques (2), Panoramique filé (2), Plan-séquence (2)
 - **Suspense, attente** — Le temps s'étire avant l'événement. Le spectateur retient son souffle.
-  - Techniques fortes : Insert (3), Plan-séquence (3), Très gros plan (3), Approche lente (push-in) (2), Bascule de point (2), Espace négatif (2), Étagement en profondeur (2), Hauteur hanches (2), Personnage de dos (2), Perspective à point de fuite central (2), Plan de suivi (2), Split diopter (double netteté) (2), Steadicam / gimbal (2), Travelling avant (2)
+  - Techniques fortes : Approche lente (push-in) (3), Insert (3), Plan-séquence (3), Très gros plan (3), Bascule de point (2), Espace négatif (2), Étagement en profondeur (2), Hauteur hanches (2), Personnage de dos (2), Perspective à point de fuite central (2), Plan de suivi (2), Split diopter (double netteté) (2), Steadicam / gimbal (2), Travelling avant (2)
 - **Désorientation, folie** — Perte de repères : ivresse, folie, choc, monde qui bascule.
   - Techniques fortes : Caméra harnachée (Snorricam) (3), Caméra tremblée (shaky cam) (3), Plan débullé (cadre penché) (3), Rotation sur l’axe (tonneau) (3), Travelling compensé (effet Vertigo) (3), Lumière intermittente (2), Travelling circulaire (2), Très grand angle (2)
 - **Contemplation, temps suspendu** — Le regard s'attarde, le plan dure. On observe le monde pour lui-même.
   - Techniques fortes : Plan fixe (3), Très grand plan d’ensemble (3), Espace négatif (2), Heure bleue (2), Heure dorée (2), Lumière de fenêtre (2), Mouvement de grue (2), Plan aérien (drone) (2), Plan d’ensemble (2), Travelling latéral (2)
+- **Élan, détermination** — Le personnage avance et rien ne l'arrête : une énergie qui porte vers l'avant, une décision prise, un mouvement qu'on accompagne.
+  - Techniques fortes : Plan de suivi (3), Travelling avant (2)
 
 ## Techniques
 
@@ -112,7 +114,7 @@
 | Plan taille | Medium shot | Cadré à la ceinture : le plan conversationnel de base. | Réalisme 2, Distance 1, Lien 1 |
 | Plan rapproché poitrine | Medium close-up | Cadré à la poitrine : l'émotion devient centrale. | Intimité 2, Lien 2, Subjectivité 1, Tristesse 1, Désir 1 |
 | Gros plan | Close-up | Le visage remplit le cadre. | Intimité 3, Subjectivité 2, Tristesse 2, Angoisse 2, Révélation 2, Désir 2, Peur 1, Oppression 1 |
-| Très gros plan | Extreme close-up | Un détail du visage : un œil, une bouche. | Suspense 3, Angoisse 2, Désir 2, Colère 2, Étrangeté 2, Révélation 2, Subjectivité 1 |
+| Très gros plan | Extreme close-up | Un détail du visage : un œil, une bouche. | Suspense 3, Colère 3, Angoisse 2, Désir 2, Étrangeté 2, Révélation 2, Subjectivité 1 |
 | Insert | Insert shot | Gros plan sur un objet ou une action qui porte une information. | Suspense 3, Révélation 3, Curiosité 1, Mystère 1, Urgence 1 |
 
 ### Angles & hauteur
@@ -121,10 +123,10 @@
 |---|---|---|---|
 | Angle neutre (hauteur des yeux) | Eye level | Caméra à hauteur du regard du personnage, horizontale. | Réalisme 2, Lien 2, Distance 1, Intimité 1 |
 | Plongée | High angle | La caméra regarde le sujet de haut. | Vulnérabilité 3, Oppression 2, Déchéance 2, Observation 1, Solitude 1, Tristesse 1 |
-| Plongée totale (vue zénithale) | Overhead / Bird’s eye / Top shot | Caméra à la verticale au-dessus de la scène. | Distance 3, Artifice 2, Oppression 2, Étrangeté 2, Contemplation 1, Désorientation 1 |
+| Plongée totale (vue zénithale) | Overhead / Bird’s eye / Top shot | Caméra à la verticale au-dessus de la scène. | Distance 3, Oppression 3, Vulnérabilité 2, Artifice 2, Étrangeté 2, Contemplation 1, Désorientation 1 |
 | Contre-plongée | Low angle | La caméra regarde le sujet d'en bas. | Domination 3, Héroïsme 3, Menace 2, Colère 1, Maîtrise 1 |
 | Contre-plongée extrême (ras du sol) | Worm’s eye view | Depuis le sol, la caméra regarde vers le haut. | Domination 3, Menace 3, Héroïsme 2, Étrangeté 2, Oppression 1 |
-| Plan débullé (cadre penché) | Dutch angle / Canted angle | L'horizon est incliné : le monde bascule. | Désorientation 3, Angoisse 2, Étrangeté 2, Menace 2, Ambiguïté 1, Urgence 1 |
+| Plan débullé (cadre penché) | Dutch angle / Canted angle | L'horizon est incliné : le monde bascule. | Désorientation 3, Angoisse 3, Étrangeté 2, Menace 2, Ambiguïté 1, Urgence 1 |
 | Hauteur hanches | Hip level | Caméra à hauteur de ceinture, légèrement contre-plongeante. | Conflit 2, Suspense 2, Héroïsme 1, Domination 1, Pureté 1 |
 | Hauteur sol | Ground level | Caméra posée au ras du sol. | Subjectivité 2, Étrangeté 1, Vulnérabilité 1, Suspense 1 |
 
@@ -133,7 +135,7 @@
 | Technique | Anglais | Effet | Intentions |
 |---|---|---|---|
 | Caméra subjective | POV shot | La caméra voit exactement ce que voit le personnage. | Subjectivité 3, Peur 2, Menace 2, Observation 2, Désorientation 1 |
-| Amorce épaule (semi-subjective) | Over-the-shoulder (OTS) | On filme un personnage par-dessus l'épaule de l'autre. | Lien 2, Conflit 2, Subjectivité 1, Réalisme 1 |
+| Amorce épaule (semi-subjective) | Over-the-shoulder (OTS) | On filme un personnage par-dessus l'épaule de l'autre. | Conflit 3, Lien 2, Subjectivité 1, Réalisme 1 |
 | Champ-contrechamp | Shot / Reverse shot | Alternance de deux points de vue opposés sur un dialogue. | Conflit 2, Lien 2, Réalisme 1 |
 | Plan à deux | Two shot | Deux personnages dans le même cadre. | Lien 3, Conflit 2, Intimité 1, Réalisme 1 |
 | Regard caméra | Breaking the fourth wall | Le personnage regarde droit dans l'objectif. | Subjectivité 2, Menace 2, Révélation 2, Artifice 2, Intimité 2, Étrangeté 1 |
@@ -148,13 +150,13 @@
 | Règle des tiers | Rule of thirds | Le sujet placé sur les lignes ou intersections des tiers. | Réalisme 2, Sérénité 1, Lien 1 |
 | Centrage & symétrie | Central / symmetrical composition | Le sujet au centre, le décor en miroir. | Artifice 3, Maîtrise 3, Domination 2, Froideur 2, Étrangeté 2, Pureté 1, Enfermement 1, Sérénité 1 |
 | Espace négatif | Negative space | Beaucoup de vide autour d'un sujet petit. | Solitude 3, Contemplation 2, Liberté 2, Oppression 2, Mélancolie 2, Vulnérabilité 2, Suspense 2 |
-| Espace de regard | Lead room / Nose room | Laisser de l'espace devant le regard du personnage. | Réalisme 2, Espoir 1, Liberté 1, Sérénité 1 |
+| Espace de regard | Lead room / Nose room | Laisser de l'espace devant le regard du personnage. | Réalisme 2, Élan 1, Espoir 1, Liberté 1, Sérénité 1 |
 | Cadrage à contre-regard | Short-siding | Le personnage regarde vers le bord proche du cadre, le vide est derrière lui. | Angoisse 3, Enfermement 2, Menace 2, Solitude 1, Étrangeté 1 |
 | Lignes directrices | Leading lines | Les lignes du décor guident l'œil vers le sujet. | Révélation 2, Suspense 1, Liberté 1, Enfermement 1, Réalisme 1 |
 | Perspective à point de fuite central | One-point perspective | Toutes les fuyantes convergent vers un point au centre. | Étrangeté 2, Enfermement 2, Artifice 2, Suspense 2, Oppression 1, Maîtrise 1 |
 | Cadre dans le cadre | Frame within a frame | Porte, fenêtre, miroir : le sujet est encadré une seconde fois. | Enfermement 3, Observation 2, Solitude 2, Artifice 1, Oppression 1 |
 | Plan en reflet | Reflection shot | Le personnage apparaît dans une vitre, un miroir ou une flaque, superposé au monde. | Ambiguïté 3, Mystère 1, Solitude 1, Mélancolie 1, Étrangeté 1, Curiosité 1 |
-| Diagonales & obliques | Diagonal composition | Lignes obliques qui traversent le cadre. | Urgence 2, Conflit 2, Colère 1, Désorientation 1, Héroïsme 1 |
+| Diagonales & obliques | Diagonal composition | Lignes obliques qui traversent le cadre. | Urgence 2, Conflit 2, Élan 1, Colère 1, Désorientation 1, Héroïsme 1 |
 | Étagement en profondeur | Depth staging | Premier plan, plan moyen, arrière-plan occupés. | Réalisme 2, Suspense 2, Lien 1, Conflit 1, Observation 1 |
 | Horizon bas (ciel dominant) | Low horizon | L'horizon au tiers inférieur : le ciel occupe l'image. | Liberté 3, Espoir 2, Héroïsme 1, Solitude 1, Contemplation 1 |
 | Horizon haut (sol dominant) | High horizon | L'horizon au tiers supérieur : la terre occupe l'image. | Oppression 2, Enfermement 1, Réalisme 1, Mélancolie 1, Déchéance 1 |
@@ -184,20 +186,20 @@
 | Plan fixe | Static / Locked-off shot | La caméra ne bouge pas. | Contemplation 3, Maîtrise 3, Distance 2, Sérénité 2, Artifice 1, Enfermement 1, Suspense 1 |
 | Panoramique horizontal | Pan | La caméra pivote sur son axe, de gauche à droite ou inversement. | Révélation 2, Curiosité 1, Contemplation 1, Suspense 1, Distance 1 |
 | Panoramique vertical | Tilt | La caméra bascule de haut en bas ou de bas en haut. | Révélation 2, Domination 1, Désir 1, Héroïsme 1 |
-| Travelling avant | Dolly in / Push in | La caméra avance vers le sujet. | Suspense 2, Révélation 2, Intimité 2, Subjectivité 2, Angoisse 1 |
-| Approche lente (push-in) | Slow push-in | Avancée à peine perceptible pendant un moment clé. | Révélation 3, Suspense 2, Angoisse 2, Intimité 2, Tristesse 1 |
+| Travelling avant | Dolly in / Push in | La caméra avance vers le sujet. | Suspense 2, Révélation 2, Intimité 2, Subjectivité 2, Élan 2, Angoisse 1 |
+| Approche lente (push-in) | Slow push-in | Avancée à peine perceptible pendant un moment clé. | Révélation 3, Suspense 3, Angoisse 2, Intimité 2, Tristesse 1 |
 | Travelling arrière | Dolly out / Pull back | La caméra recule et s'éloigne du sujet. | Solitude 3, Révélation 2, Distance 2, Tristesse 2, Mélancolie 1 |
-| Travelling latéral | Tracking / Trucking shot | La caméra se déplace parallèlement au sujet ou au décor. | Contemplation 2, Liberté 1, Distance 1, Artifice 1, Réalisme 1, Joie 1 |
+| Travelling latéral | Tracking / Trucking shot | La caméra se déplace parallèlement au sujet ou au décor. | Contemplation 2, Élan 1, Liberté 1, Distance 1, Artifice 1, Réalisme 1, Joie 1 |
 | Travelling circulaire | Arc shot / 360° | La caméra tourne autour du ou des personnages. | Héroïsme 2, Désorientation 2, Lien 2, Désir 1, Onirisme 1, Enfermement 1 |
-| Plan de suivi | Follow shot | La caméra suit un personnage qui se déplace (devant ou derrière lui). | Subjectivité 2, Suspense 2, Réalisme 2, Urgence 1 |
+| Plan de suivi | Follow shot | La caméra suit un personnage qui se déplace (devant ou derrière lui). | Élan 3, Subjectivité 2, Suspense 2, Réalisme 2, Urgence 1 |
 | Zoom avant / arrière | Zoom in / out | Variation de focale sans déplacement de la caméra. | Observation 2, Révélation 2, Artifice 1, Réalisme 1, Urgence 1 |
 | Travelling compensé (effet Vertigo) | Dolly zoom / Vertigo effect | Travelling et zoom en sens inverse : le fond se déforme. | Désorientation 3, Révélation 3, Peur 3, Angoisse 2, Étrangeté 2 |
 | Caméra à l’épaule | Handheld | Caméra portée, image vivante et instable. | Réalisme 3, Urgence 3, Subjectivité 2, Angoisse 2, Colère 1, Désorientation 1 |
 | Caméra tremblée (shaky cam) | Shaky cam | Épaule poussée à l'extrême : secousses, recadrages brusques, flou de bougé. | Urgence 3, Désorientation 3, Peur 2, Colère 1, Réalisme 1 |
-| Steadicam / gimbal | Steadicam / Gimbal | Mouvement fluide et flottant, libre dans l'espace. | Onirisme 2, Menace 2, Suspense 2, Subjectivité 1, Contemplation 1, Étrangeté 1 |
+| Steadicam / gimbal | Steadicam / Gimbal | Mouvement fluide et flottant, libre dans l'espace. | Onirisme 2, Menace 2, Suspense 2, Élan 1, Subjectivité 1, Contemplation 1, Étrangeté 1 |
 | Mouvement de grue | Crane / Jib shot | La caméra s'élève ou descend dans l'espace. | Héroïsme 2, Solitude 2, Révélation 2, Contemplation 2, Artifice 1, Liberté 1 |
 | Plan aérien (drone) | Aerial / Drone shot | Vue aérienne mobile. | Liberté 3, Contemplation 2, Distance 2, Solitude 2, Héroïsme 1 |
-| Plan-séquence | Long take / Oner | Toute une scène en un seul plan, sans coupe. | Suspense 3, Réalisme 2, Urgence 2, Enfermement 2, Subjectivité 2 |
+| Plan-séquence | Long take / Oner | Toute une scène en un seul plan, sans coupe. | Suspense 3, Réalisme 2, Urgence 2, Enfermement 2, Subjectivité 2, Élan 1 |
 | Panoramique filé | Whip pan | Panoramique si rapide que l'image devient un flou. | Urgence 2, Joie 2, Désorientation 1, Artifice 1 |
 | Caméra harnachée (Snorricam) | Body mount / Snorricam | Caméra fixée sur le corps du comédien, face à lui. | Désorientation 3, Angoisse 2, Subjectivité 2, Étrangeté 2 |
 | Rotation sur l’axe (tonneau) | Roll / Barrel roll | La caméra tourne sur son axe optique pendant le plan. | Désorientation 3, Onirisme 2, Étrangeté 2, Déchéance 1 |

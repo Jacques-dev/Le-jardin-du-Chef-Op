@@ -179,4 +179,8 @@ export const INTENTIONS = [
     desc: "Le regard s'attarde, le plan dure. On observe le monde pour lui-même.",
     questions: ["Contemplation du lieu, du visage, du temps qui passe ?"],
     oppose: ['urgence'] },
+  { id: 'elan', famille: 'energie', nom: 'Élan, détermination', en: 'momentum',
+    desc: "Le personnage avance et rien ne l'arrête : une énergie qui porte vers l'avant, une décision prise, un mouvement qu'on accompagne.",
+    questions: ["Élan conquérant ou fuite en avant ?", "Le spectateur marche-t-il avec lui ou le regarde-t-il passer ?"],
+    oppose: ['ecrasement', 'decheance', 'contemplation'] },
 ];
