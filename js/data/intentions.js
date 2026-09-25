@@ -35,6 +35,10 @@ export const INTENTIONS = [
     desc: "Le personnage perd sa place, son pouvoir, sa dignité. Le cadre enregistre la chute.",
     questions: ["Chute brutale ou lente érosion ?", "Doit-on encore éprouver de l'empathie pour lui ?"],
     oppose: ['heroisme'] },
+  { id: 'controle', famille: 'pouvoir', nom: 'Maîtrise, contrôle', en: 'control',
+    desc: "Le personnage (ou le récit) tient la situation : ordre, calme, rien ne dépasse. Le cadre est stable, composé, verrouillé.",
+    questions: ["Maîtrise sereine ou contrôle froid, presque autoritaire ?", "Ce contrôle doit-il se fissurer plus loin dans la scène ?"],
+    oppose: ['urgence', 'desorientation', 'vulnerabilite'] },
 
   // ---------- Émotions
   { id: 'solitude', famille: 'emotion', nom: 'Solitude, isolement', en: 'loneliness',
@@ -145,6 +149,10 @@ export const INTENTIONS = [
     desc: "Deux forces s'affrontent. Le cadre sépare, oppose, met en tension.",
     questions: ["Conflit égal ou déséquilibré ?"],
     oppose: ['connexion'] },
+  { id: 'curiosite', famille: 'recit', nom: 'Curiosité, découverte', en: 'curiosity',
+    desc: "L'image retient une partie de l'information : le spectateur a envie de voir, de chercher, de découvrir ce qui est caché.",
+    questions: ["Que doit-on avoir envie de voir ?", "La découverte arrive-t-elle dans le même plan ou plus tard ?"],
+    oppose: [] },
   { id: 'enfermement', famille: 'recit', nom: 'Enfermement, huis clos', en: 'confinement',
     desc: "Le personnage est pris au piège d'un lieu, d'une situation, de lui-même.",
     questions: ["Enfermement physique ou mental ?", "Y a-t-il une issue visible ?"],

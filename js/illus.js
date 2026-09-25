@@ -258,6 +258,7 @@ export function compo(k, label = '') {
     case 'horizonbas': s += `<rect class="i-ground" x="0" y="72" width="160" height="18"/><ellipse class="i-cloud" cx="50" cy="26" rx="24" ry="6"/><ellipse class="i-cloud" cx="118" cy="40" rx="18" ry="4"/>${bust(80, 66, 2.8)}`; break;
     case 'horizonhaut': s += `<rect class="i-ground" x="0" y="18" width="160" height="72"/><path class="i-line2" d="M0,50 Q80,40 160,55 M0,72 Q80,62 160,78" ${NS}/>${bust(96, 46, 4)}`; break;
     case 'amorce': s += `<rect class="i-ground" x="0" y="60" width="160" height="30"/>${bust(96, 36, 9, -1)}<path class="i-fore" d="M0,0 L42,0 Q52,30 36,90 L0,90 Z"/><path class="i-fore" d="M160,0 L130,0 Q124,12 138,26 Q150,30 160,24 Z"/>`; break;
+    case 'reflet': s += `<path class="i-far" d="M0,58 L40,48 L78,56 L78,90 L0,90 Z"/><rect class="i-ground" x="0" y="66" width="160" height="24"/><g opacity=".45">${bust(44, 40, 14, 1)}</g><rect class="i-wall2" x="78" y="0" width="5" height="90"/><rect class="i-wall" x="83" y="0" width="77" height="90"/>${bust(124, 44, 9, -1)}<path class="i-dash" d="M58,34 L116,40" ${NS}/><text class="i-txt i-cap" x="6" y="12">reflet dans la vitre</text>`; break;
     case 'desequilibre': s += `<rect class="i-ground" x="0" y="66" width="160" height="24"/>${bust(36, 30, 20, 1, 'i-fig')}${bust(132, 58, 3.4, -1)}`; break;
   }
   const cid = U('cc');
@@ -328,6 +329,7 @@ export function move(k, label = '') {
     case 'zoom': s += personTop(80, 18, 180) + camTop(80, 86, 0, 60, 56) + `<g class="i-zoomin">${camTop(80, 86, 0, 18, 64)}</g>` + `<text class="i-txt" x="100" y="80">la caméra ne bouge pas</text>`; break;
     case 'dollyzoom': s += rails(80, 94, 80, 54) + personTop(80, 18, 180) + `<g opacity=".35">${camTop(80, 86, 0, 18, 64)}</g>` + camTop(80, 58, 0, 55, 34) + arrow('M100,88 L100,62', id) + `<text class="i-txt" x="104" y="76">avance + dézoome</text>`; break;
     case 'handheld': s += personTop(80, 22, 180) + `<path class="i-arrow" d="M30,88 q6,-6 10,-2 t10,-4 t8,-6 t10,-2 t8,-6" ${NS}/>` + camTop(78, 64, 8, 40, 30); break;
+    case 'shaky': s += personTop(80, 22, 180) + `<path class="i-arrow" d="M28,90 l8,-14 l6,10 l7,-18 l6,12 l8,-20 l5,9 l9,-16" ${NS}/>` + `<g opacity=".3">${camTop(70, 62, -14, 40, 30)}</g>` + camTop(86, 66, 16, 40, 30) + `<text class="i-txt" x="104" y="92">secousses</text>`; break;
     case 'steadicam': s += `<path class="i-arrow" d="M20,92 C40,60 60,90 80,64 S120,40 130,20" marker-end="url(#${id})" ${NS}/>` + aimCam(80, 64, 128, 14, 34) + personTop(128, 14, 200); break;
     case 'crane': s += `<line class="i-ink" x1="0" y1="92" x2="160" y2="92" ${NS}/>` + personSide(40, 92, 40)
       + `<path class="i-rail" d="M132,92 L132,66" stroke-width="2" ${NS}/><path class="i-rail" d="M132,66 L104,76 M132,66 L148,60" ${NS}/><path class="i-dash" d="M132,66 L108,32" ${NS}/>`
