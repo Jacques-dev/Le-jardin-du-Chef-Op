@@ -1,23 +1,23 @@
 # Cartographie — Le jardin du Chef Op
 
-42 intentions · 115 techniques · force des liens de 1 (faible) à 3 (fort).
+42 intentions · 120 techniques · force des liens de 1 (faible) à 3 (fort).
 
 ## Intentions
 
 ### Rapport de force
 
 - **Domination, puissance** — Le personnage impose sa présence : il occupe le cadre, surplombe le spectateur ou les autres personnages, contrôle l'espace.
-  - Techniques fortes : Contre-plongée (3), Contre-plongée extrême (ras du sol) (3), Hiérarchie des regards (3), Regard dominant (ligne haute) (3), Centrage & symétrie (2), Déséquilibre des masses (2)
+  - Techniques fortes : Contre-plongée (3), Contre-plongée extrême (ras du sol) (3), Hiérarchie des regards (3), Regard dominant (ligne haute) (3), Bascule des lignes des yeux (2), Centrage & symétrie (2), Déséquilibre des masses (2)
 - **Vulnérabilité, fragilité** — Le personnage est exposé, petit, sans protection. Le spectateur a envie de le protéger ou craint pour lui.
-  - Techniques fortes : Plongée (3), Espace négatif (2), Plongée totale (vue zénithale) (2), Très grand plan d’ensemble (2)
+  - Techniques fortes : Plongée (3), Espace négatif (2), Ligne des yeux basse (2), Plongée totale (vue zénithale) (2), Très grand plan d’ensemble (2)
 - **Oppression, écrasement** — Un poids pèse sur le personnage : le décor, la société, une autorité, le destin. L'espace se referme sur lui.
-  - Techniques fortes : Hiérarchie des regards (3), Plongée totale (vue zénithale) (3), Espace négatif (2), Horizon haut (sol dominant) (2), Long téléobjectif (2), Lumière zénithale (2), Plongée (2), Très grand plan d’ensemble (2)
+  - Techniques fortes : Hiérarchie des regards (3), Ligne des yeux basse (3), Plongée totale (vue zénithale) (3), Espace négatif (2), Horizon haut (sol dominant) (2), Long téléobjectif (2), Lumière zénithale (2), Plongée (2), Très grand plan d’ensemble (2)
 - **Menace, danger** — Quelque chose de dangereux est présent ou imminent, dans le champ ou hors champ.
   - Techniques fortes : Contre-plongée extrême (ras du sol) (3), Éclairage par-dessous (3), Cadrage à contre-regard (2), Caméra subjective (2), Contre-plongée (2), Éclairage divisé (split) (2), Low key (2), Lumière dure (2), Lumière intermittente (2), Lumière zénithale (2), Plan débullé (cadre penché) (2), Regard caméra (2), Regard dominant (ligne haute) (2), Silhouette (2), Steadicam / gimbal (2)
 - **Héroïsme, grandeur** — Le personnage s'élève, devient une figure. Le plan le magnifie, parfois jusqu'au mythe.
   - Techniques fortes : Contre-plongée (3), Contre-jour & liseré (2), Contre-plongée extrême (ras du sol) (2), Éclairage papillon (Paramount) (2), Mouvement de grue (2), Optiques anamorphiques (2), Plan américain (2), Silhouette (2), Travelling circulaire (2)
 - **Déchéance, chute** — Le personnage perd sa place, son pouvoir, sa dignité. Le cadre enregistre la chute.
-  - Techniques fortes : Lumière latérale rasante (2), Palette désaturée (2), Plongée (2)
+  - Techniques fortes : Bascule des lignes des yeux (2), Lumière latérale rasante (2), Palette désaturée (2), Plongée (2)
 - **Maîtrise, contrôle** — Le personnage (ou le récit) tient la situation : ordre, calme, rien ne dépasse. Le cadre est stable, composé, verrouillé.
   - Techniques fortes : Centrage & symétrie (3), Plan fixe (3), Regard dominant (ligne haute) (2)
 - **Égalité, équilibre des forces** — Personne ne domine : les personnages se valent et le cadre les traite à parts égales (alliance, conseil, face-à-face équilibré).
@@ -26,7 +26,7 @@
 ### Émotions
 
 - **Solitude, isolement** — Le personnage est coupé des autres ou du monde. Le vide autour de lui devient un personnage.
-  - Techniques fortes : Espace négatif (3), Plan d’ensemble (3), Travelling arrière (3), Très grand plan d’ensemble (3), Cadre dans le cadre (2), Faible profondeur de champ (2), Heure bleue (2), Lumière froide (2), Lumière zénithale (2), Mouvement de grue (2), Nuit lunaire (2), Personnage de dos (2), Plan aérien (drone) (2), Silhouette (2)
+  - Techniques fortes : Espace négatif (3), Plan d’ensemble (3), Travelling arrière (3), Très grand plan d’ensemble (3), Cadre dans le cadre (2), Faible profondeur de champ (2), Heure bleue (2), Ligne des yeux basse (2), Lumière froide (2), Lumière zénithale (2), Mouvement de grue (2), Nuit lunaire (2), Personnage de dos (2), Plan aérien (drone) (2), Regards qui s’évitent (2), Silhouette (2)
 - **Intimité, tendresse** — Proximité physique et émotionnelle. Le spectateur entre dans une bulle protégée.
   - Techniques fortes : Gros plan (3), Approche lente (push-in) (2), Bougie & feu (2), Cadrage serré (coupe du visage) (2), Faible profondeur de champ (2), Lumière chaude (2), Lumière de fenêtre (2), Lumière douce (2), Plan rapproché poitrine (2), Regard caméra (2), Téléobjectif court (portrait) (2), Travelling avant (2)
 - **Mélancolie, nostalgie** — Une tristesse douce, tournée vers ce qui est perdu ou ce qui passe. Le temps semble suspendu.
@@ -55,7 +55,7 @@
 - **Onirisme, rêve** — Le réel se dérègle doucement : flou, halo, lenteur, couleurs impossibles.
   - Techniques fortes : Flare & diffusion (3), Surexposition, blancs brûlés (3), Contre-jour & liseré (2), Couleurs saturées (néon) (2), Faible profondeur de champ (2), Lumière tachetée (cookie) (2), Nuit lunaire (2), Optiques anamorphiques (2), Rayons & fumée (2), Rotation sur l’axe (tonneau) (2), Steadicam / gimbal (2)
 - **Réalisme, naturalisme** — L'image s'efface derrière le réel : lumière motivée, caméra discrète, pas d'effet visible.
-  - Techniques fortes : Caméra à l’épaule (3), Focale normale (3), Lumière motivée (3), Lumière naturelle disponible (3), Lumière réfléchie (rebond) (3), Angle neutre (hauteur des yeux) (2), Éclairage en boucle (loop) (2), Espace de regard (2), Étagement en profondeur (2), Grand angle (2), Grande profondeur de champ (2), Lumière de fenêtre (2), Lumière douce (2), Palette désaturée (2), Plan d’ensemble (2), Plan de suivi (2), Plan moyen (plan en pied) (2), Plan taille (2), Plan-séquence (2), Règle des tiers (2), Sources dans le champ (2)
+  - Techniques fortes : Caméra à l’épaule (3), Focale normale (3), Lumière motivée (3), Lumière naturelle disponible (3), Lumière réfléchie (rebond) (3), Angle neutre (hauteur des yeux) (2), Éclairage en boucle (loop) (2), Espace de regard (2), Étagement en profondeur (2), Grand angle (2), Grande profondeur de champ (2), Lumière de fenêtre (2), Lumière douce (2), Palette désaturée (2), Plan d’ensemble (2), Plan de suivi (2), Plan moyen (plan en pied) (2), Plan taille (2), Plan-séquence (2), Raccord regard (2), Règle des tiers (2), Sources dans le champ (2)
 - **Artifice, théâtralité** — L'image affiche sa construction : symétrie, couleurs franches, lumière de scène, tableau.
   - Techniques fortes : Centrage & symétrie (3), Couleurs saturées (néon) (3), Clair-obscur (2), Éclairage coquillage (clamshell) (2), Éclairage papillon (Paramount) (2), Hiérarchie des regards (2), Perspective à point de fuite central (2), Plan moyen (plan en pied) (2), Plongée totale (vue zénithale) (2), Regard caméra (2), Split diopter (double netteté) (2), Très grand angle (2)
 - **Froideur, clinique** — Distance émotionnelle, monde déshumanisé, institutionnel ou technologique.
@@ -76,15 +76,15 @@
 - **Observation, voyeurisme** — Quelqu'un regarde sans être vu. Le spectateur devient complice ou témoin gêné.
   - Techniques fortes : Amorce (premier plan) (3), Long téléobjectif (3), Cadre dans le cadre (2), Caméra subjective (2), Zoom avant / arrière (2)
 - **Révélation, prise de conscience** — Un personnage ou le spectateur comprend quelque chose. Le plan marque ce basculement.
-  - Techniques fortes : Approche lente (push-in) (3), Bascule de point (3), Insert (3), Travelling compensé (effet Vertigo) (3), Gros plan (2), Lignes directrices (2), Mouvement de grue (2), Panoramique horizontal (2), Panoramique vertical (2), Rayons & fumée (2), Regard caméra (2), Travelling arrière (2), Travelling avant (2), Très gros plan (2), Zoom avant / arrière (2)
+  - Techniques fortes : Approche lente (push-in) (3), Bascule de point (3), Insert (3), Travelling compensé (effet Vertigo) (3), Bascule des lignes des yeux (2), Gros plan (2), Lignes directrices (2), Mouvement de grue (2), Panoramique horizontal (2), Panoramique vertical (2), Rayons & fumée (2), Regard caméra (2), Regards convergents (2), Travelling arrière (2), Travelling avant (2), Très gros plan (2), Zoom avant / arrière (2)
 - **Ambiguïté, dualité** — Le personnage a deux faces : moralement trouble, double jeu, conflit intérieur.
   - Techniques fortes : Éclairage divisé (split) (3), Plan en reflet (3), Clair-obscur (2), Contraste chaud / froid (2), Éclairage Rembrandt (2), Low key (2), Motifs projetés (stores, grilles) (2)
 - **Lien, connexion** — Deux personnages (ou plus) se rejoignent : complicité, amour, alliance.
-  - Techniques fortes : Plan à deux (3), Amorce épaule (semi-subjective) (2), Angle neutre (hauteur des yeux) (2), Champ-contrechamp (2), Lignes des yeux alignées (2), Plan rapproché poitrine (2), Travelling circulaire (2)
+  - Techniques fortes : Plan à deux (3), Amorce épaule (semi-subjective) (2), Angle neutre (hauteur des yeux) (2), Champ-contrechamp (2), Lignes des yeux alignées (2), Plan rapproché poitrine (2), Raccord regard (2), Travelling circulaire (2)
 - **Conflit, opposition** — Deux forces s'affrontent. Le cadre sépare, oppose, met en tension.
-  - Techniques fortes : Amorce épaule (semi-subjective) (3), Champ-contrechamp (2), Contraste chaud / froid (2), Déséquilibre des masses (2), Diagonales & obliques (2), Éclairage croisé (2), Éclairage divisé (split) (2), Hauteur hanches (2), Lumière dure (2), Personnage de profil (2), Plan à deux (2), Plan américain (2), Split diopter (double netteté) (2)
+  - Techniques fortes : Amorce épaule (semi-subjective) (3), Bascule des lignes des yeux (2), Champ-contrechamp (2), Contraste chaud / froid (2), Déséquilibre des masses (2), Diagonales & obliques (2), Éclairage croisé (2), Éclairage divisé (split) (2), Hauteur hanches (2), Lumière dure (2), Personnage de profil (2), Plan à deux (2), Plan américain (2), Regards qui s’évitent (2), Split diopter (double netteté) (2)
 - **Curiosité, découverte** — L'image retient une partie de l'information : le spectateur a envie de voir, de chercher, de découvrir ce qui est caché.
-  - Techniques fortes : Amorce (premier plan) (3), Personnage de dos (2)
+  - Techniques fortes : Amorce (premier plan) (3), Regards convergents (3), Personnage de dos (2)
 - **Enfermement, huis clos** — Le personnage est pris au piège d'un lieu, d'une situation, de lui-même.
   - Techniques fortes : Cadre dans le cadre (3), Motifs projetés (stores, grilles) (3), Cadrage à contre-regard (2), Cadrage serré (coupe du visage) (2), Long téléobjectif (2), Perspective à point de fuite central (2), Plan-séquence (2)
 - **Liberté, évasion, immensité** — L'espace s'ouvre, l'horizon est libre. Le personnage respire.
@@ -95,7 +95,7 @@
 - **Urgence, chaos** — Tout va trop vite, le contrôle échappe. Action, panique, confusion.
   - Techniques fortes : Caméra à l’épaule (3), Caméra tremblée (shaky cam) (3), Lumière intermittente (3), Diagonales & obliques (2), Panoramique filé (2), Plan-séquence (2)
 - **Suspense, attente** — Le temps s'étire avant l'événement. Le spectateur retient son souffle.
-  - Techniques fortes : Approche lente (push-in) (3), Insert (3), Plan-séquence (3), Très gros plan (3), Bascule de point (2), Espace négatif (2), Étagement en profondeur (2), Hauteur hanches (2), Personnage de dos (2), Perspective à point de fuite central (2), Plan de suivi (2), Split diopter (double netteté) (2), Steadicam / gimbal (2), Travelling avant (2)
+  - Techniques fortes : Approche lente (push-in) (3), Insert (3), Plan-séquence (3), Très gros plan (3), Bascule de point (2), Espace négatif (2), Étagement en profondeur (2), Hauteur hanches (2), Personnage de dos (2), Perspective à point de fuite central (2), Plan de suivi (2), Regards convergents (2), Split diopter (double netteté) (2), Steadicam / gimbal (2), Travelling avant (2)
 - **Désorientation, folie** — Perte de repères : ivresse, folie, choc, monde qui bascule.
   - Techniques fortes : Caméra harnachée (Snorricam) (3), Caméra tremblée (shaky cam) (3), Ligne des yeux oblique (3), Plan débullé (cadre penché) (3), Rotation sur l’axe (tonneau) (3), Travelling compensé (effet Vertigo) (3), Lumière intermittente (2), Travelling circulaire (2), Très grand angle (2)
 - **Contemplation, temps suspendu** — Le regard s'attarde, le plan dure. On observe le monde pour lui-même.
@@ -173,6 +173,11 @@
 | Regard dominant (ligne haute) | Dominant eyeline / Power | Le regard d'un personnage est placé nettement plus haut que celui des autres. | Domination 3, Menace 2, Maîtrise 2, Héroïsme 1, Vulnérabilité 1 |
 | Ligne des yeux oblique | Tilted eyeline / Instability | La ligne des regards et du décor penche : l'équilibre est rompu. | Désorientation 3, Angoisse 2, Ambiguïté 1, Étrangeté 1, Menace 1 |
 | Hiérarchie des regards | Eyeline hierarchy | Un écart vertical immense entre un regard et tous les autres. | Domination 3, Oppression 3, Artifice 2, Menace 1, Froideur 1 |
+| Ligne des yeux basse | Low eyeline / Excessive headroom | Les yeux du personnage tout en bas du cadre, un grand vide au-dessus de lui. | Oppression 3, Vulnérabilité 2, Solitude 2, Déchéance 1, Tristesse 1 |
+| Bascule des lignes des yeux | Eyeline shift | Pendant le plan, un personnage se lève ou s'assoit : la hiérarchie des regards s'inverse. | Conflit 2, Domination 2, Révélation 2, Déchéance 2, Héroïsme 1 |
+| Raccord regard | Eyeline match | D'un plan à l'autre, les regards se répondent en direction et en hauteur. | Lien 2, Réalisme 2, Subjectivité 1, Conflit 1, Égalité 1 |
+| Regards convergents | Converging eyelines | Tous les personnages regardent le même point : le spectateur y va aussi. | Curiosité 3, Suspense 2, Révélation 2, Lien 1 |
+| Regards qui s’évitent | Diverging eyelines | Deux personnages dans le même cadre regardent dans des directions opposées. | Conflit 2, Solitude 2, Ambiguïté 1, Mélancolie 1, Tristesse 1 |
 
 ### Optique & focale
 

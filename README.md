@@ -8,7 +8,7 @@ Site web installable (PWA) pour chefs opérateurs : traduire les intentions d'un
 
 ## Contenu
 
-- 42 intentions (5 familles) et 115 techniques (12 catégories) reliées par ~560 liens pondérés. Détail complet : `CARTOGRAPHIE.md`.
+- 42 intentions (5 familles) et 120 techniques (12 catégories) reliées par ~560 liens pondérés. Détail complet : `CARTOGRAPHIE.md`.
 - Vues : par intention, par technique, composeur de plan, labo lumière 3D, découpage (projets), favoris.
 - Illustrations 100 % générées en SVG (`js/illus.js`) + tête 3D procédurale éclairée par three.js (`js/lab3d.js`).
 
