@@ -96,7 +96,7 @@ export function composerView(v, q) {
   selects.forEach(s => s.addEventListener('change', () => { sel = { ...sel, [s.dataset.axis]: s.value }; if (!s.value) delete sel[s.dataset.axis]; sync(); }));
   $('#fromInt', v).onchange = e => { if (e.target.value) { sel = suggest(e.target.value); toast(`Plan suggéré pour « ${I[e.target.value].nom} »`); sync(); } };
   $('#reset', v).onclick = () => { sel = {}; $('#fromInt', v).value = ''; sync(); };
-  $('#rand', v).onclick = () => { sel = {}; for (const a of AXES) { if (['compo', 'pdv', 'source'].includes(a.id) && Math.random() < 0.5) continue; const opts = TECHNIQUES.filter(t => a.cats.includes(t.cat)); sel[a.id] = opts[Math.floor(Math.random() * opts.length)].id; } sync(); };
+  $('#rand', v).onclick = () => { sel = {}; for (const a of AXES) { if (['compo', 'pdv', 'yeux', 'source'].includes(a.id) && Math.random() < 0.5) continue; const opts = TECHNIQUES.filter(t => a.cats.includes(t.cat)); sel[a.id] = opts[Math.floor(Math.random() * opts.length)].id; } sync(); };
   $('#shareSel', v).onclick = () => share('Plan composé — Le jardin du Chef Op', location.href.split('&plan=')[0]);
   $('#t3d', v).onclick = e => { show3d = !show3d; store.labView = { ...(store.labView || {}), composer3d: show3d }; e.target.textContent = show3d ? 'Couper' : 'Afficher'; update3d(combineRig(sel)); };
   $('#addPlan', v).onclick = () => addToProject(sel);

@@ -24,7 +24,7 @@
   /* familles d'intentions */
   --f-pouvoir: #e2685a; --f-emotion: #e79ac0; --f-atmosphere: #9d8cf0; --f-recit: #62c3d4; --f-energie: #f2c14e;
   /* catégories */
-  --c-valeur: #f2a33a; --c-angle: #f2c14e; --c-pdv: #e5d27a; --c-compo: #b6d46a; --c-optique: #7fcf9b;
+  --c-valeur: #f2a33a; --c-angle: #f2c14e; --c-pdv: #e5d27a; --c-compo: #b6d46a; --c-yeux: #8fb0f2; --c-optique: #7fcf9b;
   --c-mouvement: #62c3d4;
   --c-schema: #e79ac0; --c-qualite: #d08be0; --c-tonalite: #9d8cf0; --c-couleur: #e2685a; --c-source: #f09a6b;
   /* illustrations */
@@ -47,7 +47,7 @@
   --radius: 6px; --radius-lg: 10px;
   --shadow: 0 8px 24px rgba(60,48,20,.14);
   --f-pouvoir: #a33a2a; --f-emotion: #b0527a; --f-atmosphere: #5b4a9e; --f-recit: #2d6f7c; --f-energie: #a8741a;
-  --c-valeur: #b5542d; --c-angle: #a8741a; --c-pdv: #8a7a2a; --c-compo: #5f7d2c; --c-optique: #2f7a55;
+  --c-valeur: #b5542d; --c-angle: #a8741a; --c-pdv: #8a7a2a; --c-compo: #5f7d2c; --c-yeux: #3d5c9e; --c-optique: #2f7a55;
   --c-mouvement: #2d6f7c;
   --c-schema: #b0527a; --c-qualite: #8a4e9c; --c-tonalite: #5b4a9e; --c-couleur: #a33a2a; --c-source: #b8662e;
   --i-bg: #ece4cf; --i-sky: #e6dec8; --i-ground: #d3c7a6; --i-far: #c8c0a2; --i-far2: #b9b08f; --i-tree: #7f9168;
@@ -316,6 +316,7 @@ dialog .row { display: flex; gap: 8px; justify-content: flex-end; margin-top: 14
 .i-ink { stroke: var(--i-ink); stroke-width: 1; fill: none; }
 .i-mute { stroke: var(--i-txt); stroke-width: .8; opacity: .6; }
 .i-mute2 { fill: var(--i-far2); }
+.i-eyeline { stroke: var(--accent); stroke-width: 1.6; stroke-linecap: round; fill: none; }
 .i-dash { stroke: var(--accent); stroke-width: 1; stroke-dasharray: 4 3; fill: none; }
 .i-axis { stroke: var(--accent2); stroke-width: 1.2; stroke-dasharray: 6 4; fill: none; }
 .i-beam { fill: var(--i-beam); }

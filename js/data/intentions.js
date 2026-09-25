@@ -39,6 +39,10 @@ export const INTENTIONS = [
     desc: "Le personnage (ou le récit) tient la situation : ordre, calme, rien ne dépasse. Le cadre est stable, composé, verrouillé.",
     questions: ["Maîtrise sereine ou contrôle froid, presque autoritaire ?", "Ce contrôle doit-il se fissurer plus loin dans la scène ?"],
     oppose: ['urgence', 'desorientation', 'vulnerabilite'] },
+  { id: 'egalite', famille: 'pouvoir', nom: 'Égalité, équilibre des forces', en: 'equality',
+    desc: "Personne ne domine : les personnages se valent et le cadre les traite à parts égales (alliance, conseil, face-à-face équilibré).",
+    questions: ["Égalité paisible ou deux forces qui se neutralisent ?", "L'équilibre doit-il se rompre dans la scène ?"],
+    oppose: ['domination', 'ecrasement'] },
 
   // ---------- Émotions
   { id: 'solitude', famille: 'emotion', nom: 'Solitude, isolement', en: 'loneliness',

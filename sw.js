@@ -1,5 +1,5 @@
 // Généré par outils/generer-sw.mjs — ne pas modifier à la main
-const VERSION = 'jco-2df2504c75';
+const VERSION = 'jco-e8b3f02a02';
 const PRECACHE = ["./",
   "./css/app.css",
   "./fonts/fraunces-latin-opsz-normal.woff2",
@@ -19,6 +19,7 @@ const PRECACHE = ["./",
   "./js/data/intentions.js",
   "./js/data/lumiere.js",
   "./js/data/mouvements.js",
+  "./js/data/yeux.js",
   "./js/env.js",
   "./js/icons.js",
   "./js/illus.js",

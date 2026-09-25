@@ -8,7 +8,7 @@ Site web installable (PWA) pour chefs opérateurs : traduire les intentions d'un
 
 ## Contenu
 
-- 41 intentions (5 familles) et 111 techniques (11 catégories) reliées par ~560 liens pondérés. Détail complet : `CARTOGRAPHIE.md`.
+- 42 intentions (5 familles) et 115 techniques (12 catégories) reliées par ~560 liens pondérés. Détail complet : `CARTOGRAPHIE.md`.
 - Vues : par intention, par technique, composeur de plan, labo lumière 3D, découpage (projets), favoris.
 - Illustrations 100 % générées en SVG (`js/illus.js`) + tête 3D procédurale éclairée par three.js (`js/lab3d.js`).
 
@@ -28,7 +28,7 @@ GitHub Pages : pousser le dépôt, puis Settings → Pages → branche `main`, d
 
 ## Modifier le contenu
 
-- Données : `js/data/intentions.js`, `cadre.js`, `compo.js`, `mouvements.js`, `lumiere.js`.
+- Données : `js/data/intentions.js`, `cadre.js`, `compo.js`, `yeux.js`, `mouvements.js`, `lumiere.js`.
   - `effets: { intention: 1..3 }` crée les liens ; `combos` relie les fiches ; `rig` décrit un plan de feu (utilisé pour le SVG et la 3D).
 - Après toute modification : `node outils/generer-sw.mjs` (met à jour le cache hors ligne) et, si besoin, `node outils/generer-cartographie.mjs`.
 

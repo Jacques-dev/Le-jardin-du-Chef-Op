@@ -14,7 +14,7 @@ export const COMPO = [
     resume: "Le sujet au centre, le décor en miroir.",
     desc: "La symétrie crée un ordre, une stabilité, une solennité. Elle peut évoquer le sacré, l'autorité, l'artifice ou l'obsession. Brisée par un élément, elle devient inquiétante.",
     plateau: [['Cadre', 'Axe optique exactement au centre du décor, caméra parfaitement de niveau.'], ['Déco', 'Décor et accessoires disposés en miroir.'], ['Machino', 'Travellings strictement axiaux pour conserver la symétrie.']],
-    effets: { theatralite: 3, controle: 3, domination: 2, innocence: 1, froideur: 2, etrangete: 2, enfermement: 1, serenite: 1 },
+    effets: { theatralite: 3, controle: 3, domination: 2, egalite: 1, innocence: 1, froideur: 2, etrangete: 2, enfermement: 1, serenite: 1 },
     pieges: "Une symétrie approximative ressemble à une erreur : soit parfaite, soit franchement cassée.",
     combos: ['point-fuite', 'focale-normale', 'travelling-avant', 'fixe'],
     illus: { t: 'compo', k: 'symetrie' } },
