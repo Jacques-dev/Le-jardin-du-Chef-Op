@@ -7,12 +7,17 @@
   {
     "id": "panoramique",
     "nom": "Panoramique horizontal",
-    "prompt": "A smooth cinematic horizontal tripod pan across a sunlit artist studio, starting on an antique record player spinning vinyl, panning smoothly across paint brushes to reveal a focused painter standing before a vibrant canvas, 35mm film grain, 16:9 widescreen."
+    "prompt": "Camera mounted on a strictly stationary fixed tripod in one spot, zero spatial translation. A continuous horizontal tripod pan pivoting slowly on its axis from left to right like a turning head, starting on an antique record player and swiveling across paintbrushes to reveal a painter at their canvas, 35mm film, 16:9 widescreen."
   },
   {
     "id": "tilt",
     "nom": "Panoramique vertical",
-    "prompt": "A dramatic cinematic vertical tilt shot starting close on the polished shoes of a standing detective on wet asphalt, smoothly tilting up along their trenchcoat to reveal their vigilant eyes looking up under a fedora, atmospheric neon reflections, 35mm film grain, 16:9 widescreen."
+    "prompt": "Camera mounted on a strictly stationary locked tripod in one spot, zero vertical lift. A continuous vertical tilt shot pivoting up on its axis from the wet asphalt and shoes of a standing detective slowly angling up to their watchful eyes under a fedora, 35mm film grain, 16:9 widescreen."
+  },
+  {
+    "id": "travelling-vertical",
+    "nom": "Travelling vertical",
+    "prompt": "Camera mounted on a vertical hydraulic pedestal dolly or vertical slider. The camera translates vertically straight up from waist height to eye level with its lens remaining perfectly level and horizontal, rising up in front of an artisan working at a pottery wheel without any tilting or angling, 35mm film, 16:9 widescreen."
   },
   {
     "id": "push-in",
@@ -22,7 +27,7 @@
   {
     "id": "travelling-arriere",
     "nom": "Travelling arrière",
-    "prompt": "A cinematic smooth dolly-out tracking shot, starting close on a solitary woman sitting at an empty dining table, pulling smoothly backward away from her through grand double doors to reveal her complete isolation in the vast room, atmospheric rim lighting, 35mm film grain, 16:9 widescreen."
+    "prompt": "Clean full 16:9 widescreen frame without borders. A smooth uninterrupted dolly out tracking shot pulling steadily backward away from a solitary character sitting at an empty dining table, camera moving backward through doorway, clean modern cinema, 35mm film, 16:9 widescreen."
   },
   {
     "id": "travelling-lateral",
@@ -32,7 +37,7 @@
   {
     "id": "travelling-circulaire",
     "nom": "Travelling circulaire",
-    "prompt": "A smooth cinematic 360-degree arc shot smoothly orbiting around a detective standing in the center of an evidence room examining a glowing photograph, atmospheric dust motes and background filing cabinets spinning around him, warm cinema lighting, 16:9 widescreen."
+    "prompt": "In a vast open ballroom with wide open floor. A wide smooth continuous 360-degree orbital arc shot: the camera glides along a wide circular track completely orbiting around a solitary character standing in the center of the spacious hall, full 360 rotation with distant rotating chandeliers, 35mm film, 16:9 widescreen."
   },
   {
     "id": "suivi",

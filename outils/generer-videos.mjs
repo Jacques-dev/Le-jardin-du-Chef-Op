@@ -63,7 +63,7 @@ async function generateVideo(item) {
     parameters: {
       aspectRatio: '16:9',
       durationSeconds: 4,
-      negativePrompt: 'transitions, cuts, fade in, fade out, black screen, opening fade, title cards, text overlay, morphing, montage, jump cut, crossfade, blurry, watermark'
+      negativePrompt: 'transitions, cuts, fade in, fade out, black screen, opening fade, title cards, text overlay, morphing, montage, jump cut, crossfade, blurry, watermark, film borders, film strip, film perforations, sprockets, sprocket holes, black border, frame border'
     }
   };
 

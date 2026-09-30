@@ -329,6 +329,7 @@ export function move(k, label = '') {
     case 'fixe': s += personTop(80, 26, 180) + camTop(80, 76, 0, 40, 40) + `<text class="i-txt i-b" text-anchor="middle" x="80" y="97">caméra immobile</text>`; break;
     case 'pan': s += camTop(80, 78, -35, 30, 50) + `<g opacity=".35">${camTop(80, 78, 35, 30, 50)}</g>` + arrow('M58,40 Q80,30 102,40', id) + personTop(50, 30, 150) + personTop(112, 30, 210); break;
     case 'tilt': s += `<line class="i-ink" x1="0" y1="92" x2="160" y2="92" ${NS}/><rect class="i-wall2" x="20" y="8" width="30" height="84"/>` + camSide(110, 70, 180, 1.4) + arrow('M92,78 Q72,60 86,34', id); break;
+    case 'pedestal': s += `<line class="i-ink" x1="0" y1="92" x2="160" y2="92" ${NS}/>` + personSide(36, 92, 42) + `<path class="i-rail" d="M110,92 L110,38" stroke-width="2.5" ${NS}/>` + camSide(110, 74, 180, 1.2) + `<g opacity=".4">${camSide(110, 42, 180, 1.2)}</g>` + arrow('M125,74 L125,44', id) + `<text class="i-txt" x="110" y="24" text-anchor="middle">translation verticale</text>`; break;
     case 'dollyin': s += rails(80, 94, 80, 52) + personTop(80, 20, 180) + camTop(80, 86, 0, 40, 30) + arrow('M96,86 L96,56', id); break;
     case 'pushin': s += rails(80, 94, 80, 64) + personTop(80, 20, 180) + camTop(80, 86, 0, 32, 36) + arrow('M96,86 L96,74', id, 'stroke-dasharray="2 2"') + `<text class="i-txt" x="100" y="80">très lent</text>`; break;
     case 'dollyout': s += rails(80, 94, 80, 52) + personTop(80, 26, 180) + camTop(80, 60, 0, 40, 20) + arrow('M96,60 L96,90', id); break;
