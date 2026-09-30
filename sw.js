@@ -1,7 +1,6 @@
 // Généré par outils/generer-sw.mjs — ne pas modifier à la main
-const VERSION = 'jco-8f4e1455ec';
+const VERSION = 'jco-7130dac911';
 const PRECACHE = ["./",
-  "./.env",
   "./css/app.css",
   "./fonts/fraunces-latin-opsz-normal.woff2",
   "./fonts/ibm-plex-mono-latin-400-normal.woff2",
@@ -129,6 +128,7 @@ const PRECACHE = ["./",
   "./js/data/intentions.js",
   "./js/data/lumiere.js",
   "./js/data/mouvements.js",
+  "./js/data/yeux.js",
   "./js/env.js",
   "./js/icons.js",
   "./js/illus.js",
@@ -137,7 +137,6 @@ const PRECACHE = ["./",
   "./js/store.js",
   "./js/tools.js",
   "./js/ui.js",
-  "./lancer-generation.bat",
   "./manifest.webmanifest",
   "./vendor/three.bundle.js"];
 self.addEventListener('install', e => {

@@ -1,6 +1,7 @@
 import { INTENTIONS, FAMILLES } from './intentions.js';
 import { CADRE } from './cadre.js';
 import { COMPO } from './compo.js';
+import { YEUX } from './yeux.js';
 import { MOUVEMENTS } from './mouvements.js';
 import { LUMIERE } from './lumiere.js';
 
@@ -15,6 +16,7 @@ export const CATEGORIES = [
   { id: 'angle', groupe: 'image', nom: 'Angles & hauteur', court: 'Angle', couleur: 'var(--c-angle)' },
   { id: 'pdv', groupe: 'image', nom: 'Point de vue & configuration', court: 'Point de vue', couleur: 'var(--c-pdv)' },
   { id: 'compo', groupe: 'image', nom: 'Composition', court: 'Composition', couleur: 'var(--c-compo)' },
+  { id: 'yeux', groupe: 'image', nom: 'Ligne des yeux (eyelines)', court: 'Ligne des yeux', couleur: 'var(--c-yeux)' },
   { id: 'optique', groupe: 'image', nom: 'Optique & focale', court: 'Optique', couleur: 'var(--c-optique)' },
   { id: 'mouvement', groupe: 'mouvement', nom: 'Mouvements de caméra', court: 'Mouvement', couleur: 'var(--c-mouvement)' },
   { id: 'schema', groupe: 'lumiere', nom: 'Schémas d’éclairage', court: 'Schéma', couleur: 'var(--c-schema)' },
@@ -25,7 +27,7 @@ export const CATEGORIES = [
 ];
 
 export { INTENTIONS, FAMILLES };
-export const TECHNIQUES = [...CADRE, ...COMPO, ...MOUVEMENTS, ...LUMIERE];
+export const TECHNIQUES = [...CADRE, ...COMPO, ...YEUX, ...MOUVEMENTS, ...LUMIERE];
 
 export const T = Object.fromEntries(TECHNIQUES.map(t => [t.id, t]));
 export const I = Object.fromEntries(INTENTIONS.map(i => [i.id, i]));
@@ -45,12 +47,13 @@ export const ESSENTIELS = new Set([
 // Fiches illustrées par un photogramme cinéma réel
 export const PHOTOS = new Set(["amorce-epaule","amorce-objet","anamorphique","angle-normal","bascule-point","bougie","broad","butterfly","cadrage-serre","cadre-dans-cadre","camera-epaule","champ-contrechamp","chaud","clair-obscur","clamshell","contre-jour","contre-plongee","contre-plongee-totale","contre-regard","cross-light","debulle","desature","desequilibre","diagonales","dolly-zoom","drone","espace-negatif","espace-regard","etagement","faible-profondeur","fenetre","fixe","flare","focale-normale","froid","frontale","golden-hour","gp","grand-angle","grue","hauteur-hanches","hauteur-sol","heure-bleue","high-key","horizon-bas","horizon-haut","insert","laterale","lignes-directrices","loop","low-key","lumiere-dessous","lumiere-douce","lumiere-dure","lumiere-motivee","lumiere-naturelle","negative-fill","neon","nuit-bleue","pa","panoramique","pe","plan-deux","plan-dos","plan-sequence","plongee","plongee-totale","pm","point-fuite","pr","profil","profondeur-champ-large","pt","push-in","rebond","regard-camera","rembrandt","short","silhouette","snorricam","sources-pratiques","split","split-diopter","steadicam","stores","stroboscope","subjective","suivi","surexposition","symetrie","tachetee","teal-orange","teleobjectif","teleobjectif-court","tgp","tgpe","tiers","tilt","tonneau","travelling-arriere","travelling-avant","travelling-circulaire","travelling-lateral","tres-grand-angle","trois-points","volumetrique","whip-pan","zenithale","zoom"]);
 
-// Axes du composeur : une catégorie = un choix (sauf composition et sources, facultatifs).
+// Axes du composeur : une catégorie = un choix (sauf composition, ligne des yeux et sources, facultatifs).
 export const AXES = [
   { id: 'valeur', nom: 'Valeur de plan', cats: ['valeur'] },
   { id: 'angle', nom: 'Angle', cats: ['angle'] },
   { id: 'pdv', nom: 'Point de vue', cats: ['pdv'] },
   { id: 'compo', nom: 'Composition', cats: ['compo'] },
+  { id: 'yeux', nom: 'Ligne des yeux', cats: ['yeux'] },
   { id: 'optique', nom: 'Optique', cats: ['optique'] },
   { id: 'mouvement', nom: 'Mouvement', cats: ['mouvement'] },
   { id: 'schema', nom: 'Schéma de lumière', cats: ['schema'] },
