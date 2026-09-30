@@ -1,0 +1,97 @@
+[
+  {
+    "id": "travelling-avant",
+    "nom": "Travelling avant",
+    "prompt": "A cinematic forward dolly tracking shot gliding smoothly forward across a wooden table directly toward an intense man in a suit reading a confidential letter, camera steadily moving closer to his expressive face, dramatic window side lighting, 35mm film aesthetic, 16:9 widescreen."
+  },
+  {
+    "id": "panoramique",
+    "nom": "Panoramique horizontal",
+    "prompt": "A smooth cinematic horizontal tripod pan across a sunlit artist studio, starting on an antique record player spinning vinyl, panning smoothly across paint brushes to reveal a focused painter standing before a vibrant canvas, 35mm film grain, 16:9 widescreen."
+  },
+  {
+    "id": "tilt",
+    "nom": "Panoramique vertical",
+    "prompt": "A dramatic cinematic vertical tilt shot starting close on the polished shoes of a standing detective on wet asphalt, smoothly tilting up along their trenchcoat to reveal their vigilant eyes looking up under a fedora, atmospheric neon reflections, 35mm film grain, 16:9 widescreen."
+  },
+  {
+    "id": "push-in",
+    "nom": "Approche lente (push-in)",
+    "prompt": "An intensely slow, subtle cinematic push-in shot toward a woman sitting alone at a dimly lit wooden desk, camera slowly and imperceptibly creeping closer to her emotional eyes as she speaks, warm lamp key light, David Fincher style tension, 35mm film grain, 16:9 widescreen."
+  },
+  {
+    "id": "travelling-arriere",
+    "nom": "Travelling arrière",
+    "prompt": "A cinematic smooth dolly-out tracking shot, starting close on a solitary woman sitting at an empty dining table, pulling smoothly backward away from her through grand double doors to reveal her complete isolation in the vast room, atmospheric rim lighting, 35mm film grain, 16:9 widescreen."
+  },
+  {
+    "id": "travelling-lateral",
+    "nom": "Travelling latéral",
+    "prompt": "A smooth cinematic lateral tracking shot moving sideways alongside a stylish woman walking past neon-lit storefronts at night, maintaining a medium profile framing of her walking while streetlamps and rain pass in the foreground parallax, Wong Kar-wai style, 16:9 widescreen."
+  },
+  {
+    "id": "travelling-circulaire",
+    "nom": "Travelling circulaire",
+    "prompt": "A smooth cinematic 360-degree arc shot smoothly orbiting around a detective standing in the center of an evidence room examining a glowing photograph, atmospheric dust motes and background filing cabinets spinning around him, warm cinema lighting, 16:9 widescreen."
+  },
+  {
+    "id": "suivi",
+    "nom": "Plan de suivi",
+    "prompt": "A smooth cinematic tracking follow shot gliding right behind an elegant man in a coat as he strides purposefully through a misty cobblestone alley in autumn, over-the-shoulder perspective keeping him centered, warm gas lamp streetlights, 16:9 widescreen."
+  },
+  {
+    "id": "zoom",
+    "nom": "Zoom avant / arrière",
+    "prompt": "A classic vintage cinema optical slow zoom in across a busy plaza directly isolating a nervous man standing beside a vintage car checking his pocket watch, lens compression flattening the bustling crowd behind him, 1970s thriller aesthetic, 16:9 widescreen."
+  },
+  {
+    "id": "dolly-zoom",
+    "nom": "Travelling compensé (effet Vertigo)",
+    "prompt": "A dramatic Hitchcock vertigo dolly-zoom effect: camera dollies backward while simultaneously zooming in on a shocked man standing in an ornate hotel corridor, his face remains the same size while the background corridor drastically warps and elongates, 16:9 widescreen."
+  },
+  {
+    "id": "camera-epaule",
+    "nom": "Caméra à l'épaule",
+    "prompt": "An authentic cinematic handheld camera shot with organic breathing motion, closely following an anxious doctor walking hurriedly down a hospital corridor carrying medical charts, naturalistic documentary presence, 35mm film grain, 16:9 widescreen."
+  },
+  {
+    "id": "camera-tremblee",
+    "nom": "Caméra tremblée (shaky cam)",
+    "prompt": "An intense cinematic shaky-cam action shot with chaotic hand tremors and urgent reframing, following an exhausted runner sprinting desperately through a smoke-filled abandoned warehouse, visceral kinetic realism, 16:9 widescreen."
+  },
+  {
+    "id": "steadicam",
+    "nom": "Steadicam / gimbal",
+    "prompt": "A virtuosic floating steadicam shot gliding smoothly backwards in front of a confident woman in an evening dress walking forward through a lively opulent jazz club, weaving between cocktail tables, Scorsese style fluid motion, 16:9 widescreen."
+  },
+  {
+    "id": "grue",
+    "nom": "Mouvement de grue",
+    "prompt": "A breathtaking cinematic crane jib shot starting close on a young boy sitting on a wooden fence, rising smoothly high up into the air above him to reveal a vast golden wheatfield stretching to the sunset horizon, epic cinema vista, 16:9 widescreen."
+  },
+  {
+    "id": "drone",
+    "nom": "Plan aérien (drone)",
+    "prompt": "A spectacular cinematic aerial drone shot starting low behind a lone hiker standing on a rocky cliff ledge, swooping smoothly upwards and forwards over the edge to reveal a majestic misty mountain canyon at sunrise, 16:9 widescreen."
+  },
+  {
+    "id": "plan-sequence",
+    "nom": "Plan-séquence",
+    "prompt": "A continuous fluid cinematic sequence shot starting on a bartender pouring a drink, tracking with him as he hands the glass to a waitress, following her walking past velvet booths to a musician playing the piano, uninterrupted choreography, 16:9 widescreen."
+  },
+  {
+    "id": "whip-pan",
+    "nom": "Panoramique filé",
+    "prompt": "A dynamic cinematic whip pan shot, camera instantly snaps sideways with high-speed motion blur from a shocked man talking on a vintage telephone to the open window where curtains flutter in the wind, Wes Anderson style precision, 16:9 widescreen."
+  },
+  {
+    "id": "snorricam",
+    "nom": "Caméra harnachée (Snorricam)",
+    "prompt": "A disorienting cinematic Snorricam body-mounted shot: camera rigidly attached to a man running through a dimly lit street, keeping his panicked face locked dead center in the frame while the night buildings and streetlights wildly tilt and blur behind him, 16:9 widescreen."
+  },
+  {
+    "id": "tonneau",
+    "nom": "Rotation sur l'axe (tonneau)",
+    "prompt": "A disorienting cinematic Dutch barrel roll shot: camera focuses on an astronaut floating weightlessly inside a circular space station corridor, rotating 180 degrees continuously on its optical axis so the ceiling and floor swap upside down, Inception style, 16:9 widescreen."
+  }
+]

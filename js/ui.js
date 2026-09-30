@@ -1,4 +1,4 @@
-import { C, I, FAMILLES, PHOTOS } from './data/index.js';
+import { C, I, FAMILLES, PHOTOS, VIDEOS } from './data/index.js';
 import { illustration } from './illus.js';
 import { ICONS } from './icons.js';
 import { store } from './store.js';
@@ -18,10 +18,11 @@ export function setTitle(t) { document.title = t ? `${t} · Le jardin du Chef Op
 
 export function techCard(t, force = 0) {
   const c = C[t.cat];
+  const video = VIDEOS?.has(t.id) ? `videos/techniques/${t.id}.mp4` : null;
   const photo = PHOTOS.has(t.id) ? `images/techniques/${t.id}.jpg` : null;
   return `<div class="card-w" data-t="${t.id}"><a class="card" href="#/t/${t.id}" style="--c:${c.couleur}">
     <div class="thumb">
-      ${photo ? `<img src="${photo}" alt="${esc(t.nom)}" loading="lazy">` : illustration(t)}
+      ${video ? `<video src="${video}" autoplay loop muted playsinline disablepictureinpicture disableremoteplayback preload="metadata"></video>` : (photo ? `<img src="${photo}" alt="${esc(t.nom)}" loading="lazy">` : illustration(t))}
     </div>
     <div class="body">
       <div class="card-meta"><span class="tag" style="--c:${c.couleur}">${c.court}</span>${t.abbr ? `<span class="abbr">${esc(t.abbr)}</span>` : ''}</div>

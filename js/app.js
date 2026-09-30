@@ -1,5 +1,5 @@
 // Le jardin du Chef Op — application (routeur + vues de consultation)
-import { INTENTIONS, FAMILLES, TECHNIQUES, CATEGORIES, GROUPES, T, I, C, PAR_INTENTION, recherche, ESSENTIELS, PHOTOS } from './data/index.js';
+import { INTENTIONS, FAMILLES, TECHNIQUES, CATEGORIES, GROUPES, T, I, C, PAR_INTENTION, recherche, ESSENTIELS, PHOTOS, VIDEOS } from './data/index.js';
 import { illustration, plot, shot } from './illus.js';
 import { ICONS, LOGO } from './icons.js';
 import { store } from './store.js';
@@ -500,8 +500,10 @@ function techniqueView(v, q, id) {
   const isLight = !!t.rig;
   const v3 = viewForTechnique(t);
   const hasPhoto = PHOTOS.has(t.id);
+  const hasVideo = VIDEOS?.has(t.id);
 
   const tabs = [];
+  if (hasVideo) tabs.push(['video', 'Démo vidéo']);
   if (hasPhoto) tabs.push(['photo', 'Rendu cinéma']);
   if (isLight) tabs.push(['plan', 'Plan de feu']);
   else tabs.push(['illus', 'Schéma']);
@@ -511,9 +513,11 @@ function techniqueView(v, q, id) {
   const isEssentiel = ESSENTIELS.has(t.id);
 
   let activeTab = q.get('vue_poste') === '1' ? 'plateau' : 'effet';
-  const initialVis = hasPhoto
-    ? `<img src="images/techniques/${t.id}.jpg" alt="${esc(t.nom)}" class="fiche-photo">`
-    : (isLight ? plot(t.rig, t.nom) : illustration(t));
+  const initialVis = hasVideo
+    ? `<video src="videos/techniques/${t.id}.mp4" autoplay loop muted playsinline controls class="fiche-video fiche-photo"></video>`
+    : (hasPhoto
+      ? `<img src="images/techniques/${t.id}.jpg" alt="${esc(t.nom)}" class="fiche-photo">`
+      : (isLight ? plot(t.rig, t.nom) : illustration(t)));
 
   v.innerHTML = `
   <a class="crumb" href="#/techniques?cat=${t.cat}">${ICONS.back.replace('<svg', '<svg width="14" height="14"')} ${c.nom}</a>
@@ -605,8 +609,9 @@ function techniqueView(v, q, id) {
   const body = $('#visBody', v);
   async function showTab(k) {
     $$('[data-tab]', v).forEach(b => b.classList.toggle('on', b.dataset.tab === k));
-    if (lab) { lab.dispose(); lab = null; }
-    if (k === 'photo') {
+    if (k === 'video') {
+      body.innerHTML = `<video src="videos/techniques/${t.id}.mp4" autoplay loop muted playsinline controls class="fiche-video fiche-photo"></video>`;
+    } else if (k === 'photo') {
       body.innerHTML = `<img src="images/techniques/${t.id}.jpg" alt="${esc(t.nom)}" class="fiche-photo">`;
     } else if (k === '3d') {
       body.innerHTML = `<div class="stage mini-stage"><div class="loading">Chargement du rendu 3D…</div><span class="hint">glisser pour tourner autour</span></div>`;
