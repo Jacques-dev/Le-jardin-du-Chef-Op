@@ -32,6 +32,13 @@ export const ICONS = {
   zoomin: I('<circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5M8 11h6M11 8v6"/>'),
   zoomout: I('<circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5M8 11h6"/>'),
   reset: I('<path d="M4 12a8 8 0 1 0 2.4-5.7L4 8.5"/><path d="M4 4v4.5h4.5"/>'),
+  student: I('<path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>'),
+  pro: I('<path d="m4 6 4 4M9 5l4 4M14 4l4 4M4 8V4h16v4"/><rect x="4" y="8" width="16" height="12" rx="1.5"/>'),
+  spark: I('<path d="m12 3 2.8 6.2L21 12l-6.2 2.8L12 21l-2.8-6.2L3 12l6.2-2.8z"/>'),
+  filter: I('<polygon points="22 3 2 3 10 12.5 10 19 14 21 14 12.5 22 3"/>'),
+  check: I('<polyline points="20 6 9 17 4 12"/>'),
+  chevron: I('<path d="m6 9 6 6 6-6"/>'),
+  bulb: I('<path d="M9 18h6M10 21h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2Z"/>'),
 };
 
 export const LOGO = `<svg viewBox="0 0 48 48" aria-hidden="true">

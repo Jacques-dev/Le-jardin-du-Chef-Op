@@ -1,5 +1,4 @@
-// Petits composants partagés
-import { C, I, FAMILLES } from './data/index.js';
+import { C, I, FAMILLES, PHOTOS } from './data/index.js';
 import { illustration } from './illus.js';
 import { ICONS } from './icons.js';
 import { store } from './store.js';
@@ -19,9 +18,17 @@ export function setTitle(t) { document.title = t ? `${t} · Le jardin du Chef Op
 
 export function techCard(t, force = 0) {
   const c = C[t.cat];
+  const photo = PHOTOS.has(t.id) ? `images/techniques/${t.id}.jpg` : null;
   return `<div class="card-w" data-t="${t.id}"><a class="card" href="#/t/${t.id}" style="--c:${c.couleur}">
-    <div class="thumb">${illustration(t)}</div>
-    <div class="body"><span class="tag" style="--c:${c.couleur}">${c.court}</span><h3>${esc(t.nom)}</h3><span class="en">${esc(t.en)}</span><p>${esc(t.resume)}</p></div>
+    <div class="thumb">
+      ${photo ? `<img src="${photo}" alt="${esc(t.nom)}" loading="lazy">` : illustration(t)}
+    </div>
+    <div class="body">
+      <div class="card-meta"><span class="tag" style="--c:${c.couleur}">${c.court}</span>${t.abbr ? `<span class="abbr">${esc(t.abbr)}</span>` : ''}</div>
+      <h3>${esc(t.nom)}</h3>
+      <span class="en">${esc(t.en)}</span>
+      <p>${esc(t.resume)}</p>
+    </div>
     ${force ? `<span class="strength" title="Force du lien : ${force}/3">${[1, 2, 3].map(k => `<i class="${k <= force ? 'on' : ''}"></i>`).join('')}</span>` : ''}
   </a>${favBtn(t.id)}</div>`;
 }

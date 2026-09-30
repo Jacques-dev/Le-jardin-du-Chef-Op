@@ -19,18 +19,74 @@ export function composerView(v, q) {
   let sel = [...q.keys()].length ? decodeSel(q.toString()) : store.composer;
   const planRef = q.get('plan'); // "projet:plan" en édition
   let lab = null, show3d = store.labView?.composer3d ?? true;
+  let isAdv = q.get('mode') === 'adv';
+
+  function renderAxesHTML() {
+    if (!isAdv) {
+      const simpleAxes = [
+        { id: 'valeur', nom: '1. Valeur de plan' },
+        { id: 'angle', nom: '2. Angle & Caméra' },
+        { id: 'schema', nom: '3. Schéma de lumière' }
+      ];
+      return `
+      <div style="margin-bottom:12px">
+        <p class="muted" style="margin:0 0 10px;font-size:13px">Choisissez les 3 éléments clés pour construire votre plan :</p>
+        <div class="axes">
+          ${simpleAxes.map(a => {
+            const axisObj = AXES.find(x => x.id === a.id);
+            return `<div class="axis"><label for="ax-${a.id}"><span>${a.nom}</span><a href="#" data-open="${a.id}" hidden>fiche →</a></label>
+              <select id="ax-${a.id}" data-axis="${a.id}"><option value="">— Choisir —</option>${TECHNIQUES.filter(t => axisObj.cats.includes(t.cat)).map(t => `<option value="${t.id}">${esc(t.nom)}</option>`).join('')}</select></div>`;
+          }).join('')}
+        </div>
+      </div>
+      <div class="center-action" style="margin:12px 0 6px">
+        <button class="btn sm" id="toggleCompAdv" type="button">${ICONS.sliders} Déplier les 8 réglages avancés (Optique mm, Mouvements, Rigs…) ▾</button>
+      </div>`;
+    }
+
+    const groups = [
+      { titre: '🎬 Cadrage & Optique', ids: ['valeur', 'angle', 'pdv', 'compo', 'optique'] },
+      { titre: '🎥 Mouvement de caméra', ids: ['mouvement'] },
+      { titre: '💡 Éclairage & Ambiance', ids: ['schema', 'qualite', 'tonalite', 'couleur', 'source'] },
+    ];
+
+    return `
+    ${groups.map(g => `
+      <div class="axes-group">
+        <div class="axes-group-title">${g.titre}</div>
+        <div class="axes" style="${g.ids.length === 1 ? 'grid-template-columns:1fr' : ''}">
+          ${g.ids.map(id => {
+            const a = AXES.find(x => x.id === id);
+            return `<div class="axis"><label for="ax-${a.id}"><span>${a.nom}</span><a href="#" data-open="${a.id}" hidden>fiche →</a></label>
+              <select id="ax-${a.id}" data-axis="${a.id}"><option value="">—</option>${TECHNIQUES.filter(t => a.cats.includes(t.cat)).map(t => `<option value="${t.id}">${esc(t.nom)}</option>`).join('')}</select></div>`;
+          }).join('')}
+        </div>
+      </div>
+    `).join('')}
+    <div class="center-action" style="margin:10px 0 4px">
+      <button class="btn sm" id="toggleCompSimple" type="button">▴ Revenir aux 3 réglages essentiels</button>
+    </div>`;
+  }
 
   v.innerHTML = `
   <section class="hero" style="padding-bottom:4px"><span class="eyebrow">Composeur de plan</span><h1>Composer un plan</h1>
-    <p>Choisissez un élément par axe. L'outil lit l'intention produite, signale les contradictions et rédige les consignes pour chaque poste.</p></section>
+    <p>Associez cadrage, angle, optique et lumière. L'outil lit l'intention produite, signale les contradictions et rédige le brief pour chaque technicien.</p></section>
   <div class="composer">
     <div>
       <div class="panel">
-        <div class="axis" style="margin-bottom:14px"><label for="fromInt">Partir d'une intention</label>
-          <select id="fromInt"><option value="">— choisir pour pré-remplir —</option>${INTENTIONS.map(i => `<option value="${i.id}">${esc(i.nom)}</option>`).join('')}</select></div>
-        <div class="axes">${AXES.map(a => `<div class="axis"><label for="ax-${a.id}"><span>${a.nom}</span><a href="#" data-open="${a.id}" hidden>fiche →</a></label>
-          <select id="ax-${a.id}" data-axis="${a.id}"><option value="">—</option>${TECHNIQUES.filter(t => a.cats.includes(t.cat)).map(t => `<option value="${t.id}">${esc(t.nom)}</option>`).join('')}</select></div>`).join('')}</div>
-        <div class="actions">
+        <div class="axis" style="margin-bottom:14px"><label for="fromInt">Partir d'une émotion</label>
+          <select id="fromInt"><option value="">— choisir une intention pour pré-remplir —</option>${INTENTIONS.map(i => `<option value="${i.id}">${esc(i.nom)}</option>`).join('')}</select></div>
+        
+        <div class="composer-mode-bar">
+          <div class="mode-toggle">
+            <button type="button" class="mode-btn ${!isAdv ? 'on' : ''}" id="btnModeSimple">${ICONS.spark} 3 réglages clés</button>
+            <button type="button" class="mode-btn ${isAdv ? 'on' : ''}" id="btnModeAdv">${ICONS.sliders} Tous les axes (11)</button>
+          </div>
+        </div>
+
+        <div id="axesBox">${renderAxesHTML()}</div>
+
+        <div class="actions" style="margin-top:16px">
           ${planRef ? `<button class="btn primary" id="updPlan">${ICONS.film} Mettre à jour le plan</button>` : ''}
           <button class="btn ${planRef ? '' : 'primary'}" id="addPlan">${ICONS.plus} Ajouter au découpage</button>
           <button class="btn" id="shareSel">${ICONS.share} Partager</button>
@@ -52,9 +108,39 @@ export function composerView(v, q) {
     </div>
   </div>`;
 
-  const selects = $$('[data-axis]', v);
+  function bindAxes() {
+    const box = $('#axesBox', v);
+    box.innerHTML = renderAxesHTML();
+    const btnS = $('#btnModeSimple', v), btnA = $('#btnModeAdv', v);
+    if (btnS && btnA) {
+      btnS.classList.toggle('on', !isAdv);
+      btnA.classList.toggle('on', isAdv);
+    }
+    const selects = $$('[data-axis]', box);
+    selects.forEach(s => {
+      s.value = sel[s.dataset.axis] || '';
+      const a = $(`[data-open="${s.dataset.axis}"]`, box);
+      if (a) { a.hidden = !s.value; a.href = `#/t/${s.value}`; }
+      s.addEventListener('change', () => {
+        sel = { ...sel, [s.dataset.axis]: s.value };
+        if (!s.value) delete sel[s.dataset.axis];
+        sync();
+      });
+    });
+    $('#toggleCompAdv', box)?.addEventListener('click', () => { isAdv = true; bindAxes(); });
+    $('#toggleCompSimple', box)?.addEventListener('click', () => { isAdv = false; bindAxes(); });
+    $$('[data-open]', box).forEach(a => a.addEventListener('click', e => { if (a.hidden) e.preventDefault(); }));
+  }
+
+  $('#btnModeSimple', v)?.addEventListener('click', () => { isAdv = false; bindAxes(); });
+  $('#btnModeAdv', v)?.addEventListener('click', () => { isAdv = true; bindAxes(); });
+
   function sync() {
-    selects.forEach(s => { s.value = sel[s.dataset.axis] || ''; const a = $(`[data-open="${s.dataset.axis}"]`, v); a.hidden = !s.value; a.href = `#/t/${s.value}`; });
+    $$('[data-axis]', v).forEach(s => {
+      s.value = sel[s.dataset.axis] || '';
+      const a = $(`[data-open="${s.dataset.axis}"]`, v);
+      if (a) { a.hidden = !s.value; a.href = `#/t/${s.value}`; }
+    });
     store.composer = sel;
     const qs = encodeSel(sel) + (planRef ? `&plan=${planRef}` : '');
     history.replaceState({ keepScroll: true }, '', `#/composer${qs ? '?' + qs : ''}`);
@@ -93,7 +179,7 @@ export function composerView(v, q) {
     pending = requestAnimationFrame(() => { lab.setRig(rig); lab.setView(view3d(sel)); });
     $('.stage', box).style.transform = sel.angle === 'debulle' ? 'rotate(-12deg) scale(1.28)' : '';
   }
-  selects.forEach(s => s.addEventListener('change', () => { sel = { ...sel, [s.dataset.axis]: s.value }; if (!s.value) delete sel[s.dataset.axis]; sync(); }));
+  bindAxes();
   $('#fromInt', v).onchange = e => { if (e.target.value) { sel = suggest(e.target.value); toast(`Plan suggéré pour « ${I[e.target.value].nom} »`); sync(); } };
   $('#reset', v).onclick = () => { sel = {}; $('#fromInt', v).value = ''; sync(); };
   $('#rand', v).onclick = () => { sel = {}; for (const a of AXES) { if (['compo', 'pdv', 'source'].includes(a.id) && Math.random() < 0.5) continue; const opts = TECHNIQUES.filter(t => a.cats.includes(t.cat)); sel[a.id] = opts[Math.floor(Math.random() * opts.length)].id; } sync(); };
@@ -105,7 +191,6 @@ export function composerView(v, q) {
     if (!pl) return toast('Plan introuvable');
     pl.setup = { ...sel }; store.upsertProject(pr); toast('Plan mis à jour'); location.hash = `#/decoupage/${pid}`;
   };
-  $$('[data-open]', v).forEach(a => a.addEventListener('click', e => { if (a.hidden) e.preventDefault(); }));
   sync();
   return () => { lab?.dispose(); };
 }

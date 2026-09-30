@@ -1,0 +1,117 @@
+[
+  {
+    "id": "rembrandt",
+    "nom": "Éclairage Rembrandt",
+    "prompt": "A cinematic 35mm film still of dramatic Rembrandt lighting (éclairage Rembrandt). Close-up portrait of a thoughtful character in a dark interior. A single key light creates the classic illuminated inverted triangle of light on the cheek on the shadow side below the eye, deep rich chiaroscuro shadows, Gordon Willis style cinematography, subtle 35mm grain."
+  },
+  {
+    "id": "clair-obscur",
+    "nom": "Clair-obscur",
+    "prompt": "A cinematic 35mm movie film still showcasing extreme chiaroscuro (clair-obscur). Dramatic portrait of a figure half plunged in deep velvety darkness and half carved out by a sharp sliver of light, high contrast film noir aesthetic, Caravaggio painterly cinematography, rich black levels, 35mm Kodak grain."
+  },
+  {
+    "id": "contre-jour",
+    "nom": "Contre-jour",
+    "prompt": "A cinematic 35mm film still featuring dramatic backlight (contre-jour / silhouette). A solitary character silhouetted against a brilliant setting sun through haze, gorgeous lens flare, rim lighting glowing around the hair and edges, rich moody atmosphere, Terrence Malick golden hour cinematography."
+  },
+  {
+    "id": "contre-plongee",
+    "nom": "Contre-plongée",
+    "prompt": "A cinematic 35mm film still of a dramatic low-angle shot (contre-plongée). The camera looks up from low ground at an imposing, powerful character standing against a brooding cloudy sky and monumental architecture, conveying authority and dominance, Greg Fraser style cinematography, 35mm film texture."
+  },
+  {
+    "id": "debulle",
+    "nom": "Plan débullé (Dutch angle)",
+    "prompt": "A cinematic 35mm film still of a tilted Dutch angle shot (plan débullé). Tilted 15-degree camera angle framing an anxious protagonist running or standing in a skewed city alleyway at night, conveying psychological disorientation and tension, Carol Reed Third Man noir cinematography."
+  },
+  {
+    "id": "lumiere-dure",
+    "nom": "Lumière dure",
+    "prompt": "A cinematic 35mm film still showcasing harsh direct lighting (lumière dure). Portrait of a rugged character under direct searing noon sunlight with razor-sharp black shadows, high micro-contrast on the weathered face, Sergio Leone spaghetti western cinematography, 35mm grain."
+  },
+  {
+    "id": "pa",
+    "nom": "Plan américain",
+    "prompt": "A cinematic 35mm film still of an authentic plan américain (cowboy shot, cut at mid-thigh). Two characters facing each other in tense standoff conversation in a dusty industrial warehouse, balanced framing, shallow depth of field, Roger Deakins style cinematic lighting."
+  },
+  {
+    "id": "pm",
+    "nom": "Plan moyen (en pied)",
+    "prompt": "A cinematic 35mm film still of a full shot (plan moyen / plan en pied). A stylish character framed from head to toe standing under a glowing neon sign in a rainy city street at night, reflective puddle on the pavement, atmosphere of quiet urban solitude, Wong Kar-wai color palette."
+  },
+  {
+    "id": "tgp",
+    "nom": "Très gros plan",
+    "prompt": "An intense cinematic 35mm film still extreme close-up (très gros plan). Tight crop framing only the eyes and furrowed brow of a character in suspense, glistening moisture in the iris reflecting a subtle light source, razor-sharp focus on the eyelashes, Sergio Leone cinematic tension."
+  },
+  {
+    "id": "amorce-epaule",
+    "nom": "Amorce épaule",
+    "prompt": "A classic cinematic 35mm film still over-the-shoulder shot (amorce épaule). In the blurred foreground, the back of a character's shoulder and head; in sharp focus across the table, an expressive interlocutor during an intimate conversation in a dimly lit bistro, David Fincher cinematography."
+  },
+  {
+    "id": "grand-angle",
+    "nom": "Grand-angle (24mm)",
+    "prompt": "A cinematic 35mm film still shot with an ultra-wide angle 24mm cinema lens. A character in the foreground with an expansive sense of deep perspective stretching down an endless futuristic or brutalist concrete corridor, slight optical distortion accentuating distance, Denis Villeneuve cinematography."
+  },
+  {
+    "id": "teleobjectif",
+    "nom": "Téléobjectif (135mm)",
+    "prompt": "A cinematic 35mm film still shot with a long telephoto 135mm lens. Heavy compression of perspective, creamy blurred background isolating a character in sharp focus within a dense crowded street, beautiful circular bokeh orbs, Michael Mann Heat style cinematography."
+  },
+  {
+    "id": "hauteur-sol",
+    "nom": "Hauteur sol",
+    "prompt": "A cinematic 35mm film still, camera positioned directly at ground level on a wet asphalt street. Extreme low camera height capturing the boots of a character walking forward into rain puddles reflecting neon city lights, dramatic dynamic perspective, 16:9 widescreen, Denis Villeneuve style."
+  },
+  {
+    "id": "anamorphique",
+    "nom": "Optiques anamorphiques",
+    "prompt": "A cinematic 35mm film still shot with vintage anamorphic cinema lenses. 16:9 widescreen frame with characteristic subtle oval bokeh in background city lights, delicate horizontal cyan lens flare streak, intimate portrait of an actor, Michael Mann style cinematography."
+  },
+  {
+    "id": "fixe",
+    "nom": "Plan fixe",
+    "prompt": "A perfectly balanced, serene cinematic 35mm film still with a completely static camera frame. A solitary character seated quietly in a minimalist architectural living room looking out a large picture window onto morning forest mist, Ozu style compositional perfection, 35mm grain."
+  },
+  {
+    "id": "travelling-avant",
+    "nom": "Travelling avant",
+    "prompt": "A cinematic 35mm film still of an intense forward dolly push-in shot. Camera moving smoothly forward toward a tense character sitting at a table as a profound revelation occurs, dramatic cinematic lighting, shallow depth of field, David Fincher cinematography."
+  },
+  {
+    "id": "travelling-lateral",
+    "nom": "Travelling latéral",
+    "prompt": "A cinematic 35mm film still of a lateral tracking shot. Camera moving sideways alongside a stylish character walking past colourful shopfronts and vintage glowing signs at night, cinematic parallax effect between foreground and background, Wong Kar-wai style."
+  },
+  {
+    "id": "suivi",
+    "nom": "Plan de suivi",
+    "prompt": "A cinematic 35mm film still of a tracking following shot. Over-the-shoulder perspective smoothly following a woman in an elegant coat striding down a foggy cobblestone European alleyway in autumn, atmospheric street lamps, immersive camera perspective, 16:9 widescreen."
+  },
+  {
+    "id": "plan-sequence",
+    "nom": "Plan-séquence",
+    "prompt": "A richly detailed cinematic 35mm film still from a virtuosic continuous sequence shot. Multiple layers of action in an opulent 1920s jazz club or theater backstage, vibrant actors and musicians moving dynamically through the frame, lush lighting, Alfonso Cuarón style staging."
+  },
+  {
+    "id": "loop",
+    "nom": "Éclairage en boucle (loop)",
+    "prompt": "Cinematic 35mm film still portrait of an elegant character in a movie scene. Directional key light creates a delicate subtle curved shadow beside the nose on the cheek, warm soft lighting, cinematic Kodak Portra color grading, master cinematography, 16:9 aspect ratio."
+  },
+  {
+    "id": "short",
+    "nom": "Éclairage court (short)",
+    "prompt": "Cinematic 35mm film still dramatic portrait of a character in a moody interior. Directional lighting where the side of the face turned away from the camera is illuminated, leaving the front cheek in atmospheric shadow, moody chiaroscuro contrast, 35mm film grain, 16:9 widescreen."
+  },
+  {
+    "id": "rebond",
+    "nom": "Lumière réfléchie (rebond)",
+    "prompt": "A cinematic 35mm film still demonstrating bounced soft lighting. Portrait in an apartment interior with key light bounced off a large white beadboard reflector, creating ultra-soft flattering ambient illumination without harsh specular reflections, naturalistic cinema lighting."
+  },
+  {
+    "id": "volumetrique",
+    "nom": "Rayons & fumée",
+    "prompt": "A breathtaking cinematic 35mm film still featuring dramatic volumetric light rays (god rays). Golden sunbeams streaming through tall industrial windows through atmospheric dust and haze, illuminating a solitary standing silhouette, Ridley Scott Blade Runner style."
+  }
+]

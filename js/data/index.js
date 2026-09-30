@@ -31,6 +31,20 @@ export const T = Object.fromEntries(TECHNIQUES.map(t => [t.id, t]));
 export const I = Object.fromEntries(INTENTIONS.map(i => [i.id, i]));
 export const C = Object.fromEntries(CATEGORIES.map(c => [c.id, c]));
 
+// Sélection des fondamentaux de l'image (accessible débutant)
+export const ESSENTIELS = new Set([
+  'pe', 'pm', 'pa', 'pr', 'gp',
+  'angle-normal', 'plongee', 'contre-plongee', 'debulle',
+  'champ-contrechamp', 'amorce-epaule',
+  'tiers', 'symetrie', 'espace-regard',
+  'focale-normale', 'grand-angle', 'teleobjectif', 'faible-profondeur',
+  'fixe', 'panoramique', 'travelling-avant', 'camera-epaule',
+  'trois-points', 'rembrandt', 'contre-jour', 'laterale', 'lumiere-douce', 'lumiere-dure', 'clair-obscur', 'fenetre'
+]);
+
+// Fiches illustrées par un photogramme cinéma réel
+export const PHOTOS = new Set(["amorce-epaule","amorce-objet","anamorphique","angle-normal","bascule-point","bougie","broad","butterfly","cadrage-serre","cadre-dans-cadre","camera-epaule","champ-contrechamp","chaud","clair-obscur","clamshell","contre-jour","contre-plongee","contre-plongee-totale","contre-regard","cross-light","debulle","desature","desequilibre","diagonales","dolly-zoom","drone","espace-negatif","espace-regard","etagement","faible-profondeur","fenetre","fixe","flare","focale-normale","froid","frontale","golden-hour","gp","grand-angle","grue","hauteur-hanches","hauteur-sol","heure-bleue","high-key","horizon-bas","horizon-haut","insert","laterale","lignes-directrices","loop","low-key","lumiere-dessous","lumiere-douce","lumiere-dure","lumiere-motivee","lumiere-naturelle","negative-fill","neon","nuit-bleue","pa","panoramique","pe","plan-deux","plan-dos","plan-sequence","plongee","plongee-totale","pm","point-fuite","pr","profil","profondeur-champ-large","pt","push-in","rebond","regard-camera","rembrandt","short","silhouette","snorricam","sources-pratiques","split","split-diopter","steadicam","stores","stroboscope","subjective","suivi","surexposition","symetrie","tachetee","teal-orange","teleobjectif","teleobjectif-court","tgp","tgpe","tiers","tilt","tonneau","travelling-arriere","travelling-avant","travelling-circulaire","travelling-lateral","tres-grand-angle","trois-points","volumetrique","whip-pan","zenithale","zoom"]);
+
 // Axes du composeur : une catégorie = un choix (sauf composition et sources, facultatifs).
 export const AXES = [
   { id: 'valeur', nom: 'Valeur de plan', cats: ['valeur'] },

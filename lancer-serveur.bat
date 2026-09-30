@@ -1,9 +1,8 @@
 @echo off
-REM Lance le site en local sur http://localhost:8000 (fermer cette fenetre pour arreter)
+REM Lance le site en local avec rechargement automatique (Live Reload) sur http://localhost:5500
 cd /d "%~dp0"
-start "" http://localhost:8000
-where py >nul 2>nul && (py -m http.server 8000 & goto :eof)
-where python >nul 2>nul && (python -m http.server 8000 & goto :eof)
-where node >nul 2>nul && (npx -y http-server -p 8000 -c-1 & goto :eof)
-echo Python ou Node est necessaire : https://www.python.org/downloads/
+where npx >nul 2>nul && (npx -y live-server . --port=5500 & goto :eof)
+where py >nul 2>nul && (start "" http://localhost:5500 & py -m http.server 5500 & goto :eof)
+where python >nul 2>nul && (start "" http://localhost:5500 & python -m http.server 5500 & goto :eof)
+echo Node.js ou Python est requis : https://nodejs.org/
 pause

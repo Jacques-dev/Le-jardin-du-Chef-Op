@@ -7,6 +7,9 @@ export const store = {
   get theme() { return safeGet('theme', null); },
   set theme(v) { safeSet('theme', v); },
 
+  get mode() { return safeGet('mode', 'debutant'); },
+  set mode(v) { safeSet('mode', v); window.dispatchEvent(new CustomEvent('jco:mode', { detail: v })); },
+
   favs() { return new Set(safeGet('favs', [])); },
   isFav(id) { return this.favs().has(id); },
   toggleFav(id) { const f = this.favs(); f.has(id) ? f.delete(id) : f.add(id); safeSet('favs', [...f]); return f.has(id); },
