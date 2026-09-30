@@ -7,17 +7,17 @@
   {
     "id": "panoramique",
     "nom": "Panoramique horizontal",
-    "prompt": "Camera mounted on a strictly stationary fixed tripod in one spot, zero spatial translation. A continuous horizontal tripod pan pivoting slowly on its axis from left to right like a turning head, starting on an antique record player and swiveling across paintbrushes to reveal a painter at their canvas, 35mm film, 16:9 widescreen."
+    "prompt": "Stationary camera on a bolted tripod with zero lateral movement. The camera is fixed in the center of a spacious library, perfectly stationary without rolling or tracking sideways. The camera only rotates horizontally on its own central axis from left to right, panning smoothly across bookshelves to reveal a scholar reading a heavy ancient book at a desk. Pure rotation on a fixed pivot, zero camera translation, 35mm film, 16:9 widescreen."
   },
   {
     "id": "tilt",
     "nom": "Panoramique vertical",
-    "prompt": "Camera mounted on a strictly stationary locked tripod in one spot, zero vertical lift. A continuous vertical tilt shot pivoting up on its axis from the wet asphalt and shoes of a standing detective slowly angling up to their watchful eyes under a fedora, 35mm film grain, 16:9 widescreen."
+    "prompt": "Stationary camera bolted to the floor at human chest height with zero vertical elevation. The camera body remains at the exact same height throughout the shot. The camera lens angles upwards from pointing down at a character's hands typing on a vintage typewriter on a desk, tilting up on its vertical hinge to frame the character's exhausted eyes looking up at the ceiling. Pure vertical hinge pivot from a fixed height, zero pedestal, zero camera lift, 35mm film grain, 16:9 widescreen."
   },
   {
     "id": "travelling-vertical",
     "nom": "Travelling vertical",
-    "prompt": "Camera mounted on a vertical hydraulic pedestal dolly or vertical slider. The camera translates vertically straight up from waist height to eye level with its lens remaining perfectly level and horizontal, rising up in front of an artisan working at a pottery wheel without any tilting or angling, 35mm film, 16:9 widescreen."
+    "prompt": "A dramatic vertical pedestal camera movement. The camera physically rises straight up from behind a low brick wall near ground level, elevating smoothly upwards in a continuous vertical line to look over the top of the wall into a sunlit courtyard where a young woman is tending to roses. Strong vertical parallax as the camera ascends vertically while keeping its lens strictly level and horizontal, zero tilt, 35mm film, 16:9 widescreen."
   },
   {
     "id": "push-in",
@@ -52,17 +52,17 @@
   {
     "id": "dolly-zoom",
     "nom": "Travelling compensé (effet Vertigo)",
-    "prompt": "A dramatic Hitchcock vertigo dolly-zoom effect: camera dollies backward while simultaneously zooming in on a shocked man standing in an ornate hotel corridor, his face remains the same size while the background corridor drastically warps and elongates, 16:9 widescreen."
+    "prompt": "A textbook Hitchcock Vertigo dolly zoom shot: Close-up on a man's terrified face in a long hotel hallway. The camera physically dollies backward away from him along the corridor while simultaneously the optical zoom lens zooms in. The man's face remains locked at the exact same size in the frame, while the background hallway dramatically warps, stretches and expands with extreme optical vertigo distortion, 35mm film, 16:9 widescreen."
   },
   {
     "id": "camera-epaule",
     "nom": "Caméra à l'épaule",
-    "prompt": "An authentic cinematic handheld camera shot with organic breathing motion, closely following an anxious doctor walking hurriedly down a hospital corridor carrying medical charts, naturalistic documentary presence, 35mm film grain, 16:9 widescreen."
+    "prompt": "A cinematic handheld camera shot strictly at human shoulder height (1.55 meters high). The camera operator holds the camera on their right shoulder with subtle organic breathing motion and gentle human drift at eye level, observing two actors conversing across a dining table in an apartment, authentic shoulder-mount cinema framing, 35mm film grain, 16:9 widescreen."
   },
   {
     "id": "camera-tremblee",
     "nom": "Caméra tremblée (shaky cam)",
-    "prompt": "An intense cinematic shaky-cam action shot with chaotic hand tremors and urgent reframing, following an exhausted runner sprinting desperately through a smoke-filled abandoned warehouse, visceral kinetic realism, 16:9 widescreen."
+    "prompt": "An intense cinematic shaky cam foot chase: the camera operator is frantically running at high speed right behind a suspect sprinting desperately through a narrow dark alleyway at night. Chaotic jarring camera shakes, heavy rapid footsteps, frantic handheld tremors, sudden erratic reframing and visceral kinetic motion blur, Bourne Identity style raw action, 35mm film grain, 16:9 widescreen."
   },
   {
     "id": "steadicam",
