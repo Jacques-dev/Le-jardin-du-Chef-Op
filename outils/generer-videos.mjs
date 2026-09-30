@@ -54,8 +54,11 @@ if (toGenerate.length === 0) {
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 async function generateVideo(item) {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/veo-3.1-fast-generate-preview:predictLongRunning?key=${apiKey}`;
-  
+  const models = [
+    'veo-3.1-generate-preview',
+    'veo-3.1-fast-generate-preview'
+  ];
+
   const cleanPrompt = `Pure continuous single take starting directly in motion from the very first frame. Uninterrupted continuous camera movement with constant smooth velocity throughout. Strictly no opening transition, no fade in from black, no cuts, no montage: ${item.prompt}`;
 
   const payload = {
@@ -67,47 +70,57 @@ async function generateVideo(item) {
     }
   };
 
-  const res = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload)
-  });
+  let lastErr = null;
+  for (const model of models) {
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:predictLongRunning?key=${apiKey}`;
+    try {
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
 
-  if (!res.ok) {
-    const errText = await res.text();
-    throw new Error(`Erreur API (${res.status}) : ${errText}`);
-  }
+      if (!res.ok) {
+        const errText = await res.text();
+        lastErr = new Error(`Erreur ${model} (${res.status}) : ${errText}`);
+        continue;
+      }
 
-  const op = await res.json();
-  if (!op.name) throw new Error("Réponse inattendue sans identifiant d'opération.");
+      const op = await res.json();
+      if (!op.name) throw new Error("Réponse inattendue sans identifiant d'opération.");
 
-  // Polling de l'opération
-  const pollUrl = `https://generativelanguage.googleapis.com/v1beta/${op.name}?key=${apiKey}`;
-  let attempts = 0;
-  while (attempts < 40) {
-    await sleep(8000);
-    const pollRes = await fetch(pollUrl);
-    if (!pollRes.ok) throw new Error(`Erreur polling (${pollRes.status})`);
-    const pollData = await pollRes.json();
-    
-    if (pollData.done) {
-      if (pollData.error) throw new Error(pollData.error.message || 'Erreur génération');
-      const sample = pollData.response?.generateVideoResponse?.generatedSamples?.[0];
-      const downloadUri = sample?.video?.uri;
-      if (!downloadUri) throw new Error("Aucun lien de téléchargement trouvé dans le résultat.");
-      
-      // Téléchargement du fichier MP4
-      const fullDownloadUrl = `${downloadUri}${downloadUri.includes('?') ? '&' : '?'}key=${apiKey}`;
-      const dlRes = await fetch(fullDownloadUrl);
-      if (!dlRes.ok) throw new Error(`Échec du téléchargement du fichier vidéo (${dlRes.status})`);
-      const buffer = Buffer.from(await dlRes.arrayBuffer());
-      const destPath = path.join(vidDir, `${item.id}.mp4`);
-      fs.writeFileSync(destPath, buffer);
-      return buffer.length;
+      // Polling de l'opération
+      const pollUrl = `https://generativelanguage.googleapis.com/v1beta/${op.name}?key=${apiKey}`;
+      let attempts = 0;
+      while (attempts < 60) {
+        await sleep(6000);
+        const pollRes = await fetch(pollUrl);
+        if (!pollRes.ok) throw new Error(`Erreur polling (${pollRes.status})`);
+        const pollData = await pollRes.json();
+        
+        if (pollData.done) {
+          if (pollData.error) throw new Error(pollData.error.message || 'Erreur génération');
+          const sample = pollData.response?.generateVideoResponse?.generatedSamples?.[0];
+          const downloadUri = sample?.video?.uri;
+          if (!downloadUri) throw new Error("Aucun lien de téléchargement trouvé dans le résultat.");
+          
+          // Téléchargement du fichier MP4
+          const fullDownloadUrl = `${downloadUri}${downloadUri.includes('?') ? '&' : '?'}key=${apiKey}`;
+          const dlRes = await fetch(fullDownloadUrl);
+          if (!dlRes.ok) throw new Error(`Échec du téléchargement du fichier vidéo (${dlRes.status})`);
+          const buffer = Buffer.from(await dlRes.arrayBuffer());
+          const destPath = path.join(vidDir, `${item.id}.mp4`);
+          fs.writeFileSync(destPath, buffer);
+          return buffer.length;
+        }
+        attempts++;
+      }
+      throw new Error("Délai d'attente dépassé (timeout).");
+    } catch (err) {
+      lastErr = err;
     }
-    attempts++;
   }
-  throw new Error("Délai d'attente dépassé (timeout).");
+  throw lastErr || new Error("Échec de la génération sur tous les modèles.");
 }
 
 let successes = 0, errors = 0;
@@ -119,9 +132,11 @@ for (let i = 0; i < toGenerate.length; i++) {
     const bytes = await generateVideo(item);
     console.log(`✅ OK (${(bytes / 1024 / 1024).toFixed(1)} Mo)`);
     successes++;
+    await sleep(8000); // Pause de temporisation pour respecter le quota
   } catch (err) {
     console.log(`❌ Erreur : ${err.message}`);
     errors++;
+    await sleep(5000);
   }
 }
 
