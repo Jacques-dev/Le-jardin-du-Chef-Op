@@ -1,5 +1,5 @@
 // Généré par outils/generer-sw.mjs — ne pas modifier à la main
-const VERSION = 'jco-9a1add46b4';
+const VERSION = 'jco-cc6e2e7c0d';
 const PRECACHE = ["./",
   "./css/app.css",
   "./fonts/fraunces-latin-opsz-normal.woff2",
@@ -120,12 +120,25 @@ const PRECACHE = ["./",
   "./js/ui.js",
   "./manifest.webmanifest",
   "./vendor/three.bundle.js",
+  "./videos/techniques/camera-epaule.mp4",
+  "./videos/techniques/camera-tremblee.mp4",
+  "./videos/techniques/dolly-zoom.mp4",
+  "./videos/techniques/drone.mp4",
+  "./videos/techniques/grue.mp4",
+  "./videos/techniques/panoramique.mp4",
+  "./videos/techniques/plan-sequence.mp4",
   "./videos/techniques/push-in.mp4",
+  "./videos/techniques/snorricam.mp4",
+  "./videos/techniques/steadicam.mp4",
   "./videos/techniques/suivi.mp4",
+  "./videos/techniques/tilt.mp4",
+  "./videos/techniques/tonneau.mp4",
   "./videos/techniques/travelling-arriere.mp4",
   "./videos/techniques/travelling-avant.mp4",
   "./videos/techniques/travelling-circulaire.mp4",
   "./videos/techniques/travelling-lateral.mp4",
+  "./videos/techniques/travelling-vertical.mp4",
+  "./videos/techniques/whip-pan.mp4",
   "./videos/techniques/zoom.mp4"];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(PRECACHE)).then(() => self.skipWaiting()));
