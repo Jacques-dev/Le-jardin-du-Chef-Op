@@ -30,7 +30,7 @@ export const SCHEMAS_PROMPTS = {
   short: {
     id: "short",
     nom: "Éclairage court (short)",
-    prompt: "Cinematic 35mm film still, dramatic medium close-up bust portrait of a character in three-quarters view: head and gaze turned 30 degrees to the left of the frame (viewer's left), exactly matching the 3D schema orientation. Authentic short lighting cinematography setup: the single key light is positioned on the left side of the frame (viewer's left at -60 degrees, elevated 30 degrees). The directional light strikes only the narrow cheek on the far left side and the ridge of the nose. The broad cheek facing the camera (on the viewer's right) is completely plunged in dark moody chiaroscuro shadow. Low ambient fill, atmospheric dark interior, 35mm grain, 16:9 widescreen. Not a profile: clear three-quarter angle where both eyes are visible, head turned to the left, light from the left."
+    prompt: "Cinematic 35mm film still, medium close-up bust portrait of a character in three-quarters view: head and gaze turned 30 degrees to the left. Pure textbook short lighting (éclairage court): a single powerful key light from the far left (-60 degrees) casts bright illumination onto the narrow far cheek and nose bridge. The broad cheek facing the camera (the right cheek) is in deep, pitch-black chiaroscuro shadow, with zero fill light. High contrast film noir cinematography: the entire camera-facing side of the face is black in shadow, only the far side of the face is brightly carved out by light. Dark background with subtle faint wall glow on the right. 35mm Kodak grain, 16:9 widescreen."
   },
   broad: {
     id: "broad",
