@@ -59,14 +59,17 @@ async function generateVideo(item) {
     'veo-3.1-fast-generate-preview'
   ];
 
-  const cleanPrompt = `Pure continuous single take starting directly in motion from the very first frame. Uninterrupted continuous camera movement with constant smooth velocity throughout. Strictly no opening transition, no fade in from black, no cuts, no montage: ${item.prompt}`;
+  const cleanPrompt = `${item.prompt}. Single continuous take in constant motion throughout, no opening transition, no fade in from black, no cuts.`;
+
+  const defaultNeg = 'transitions, cuts, fade in, fade out, black screen, opening fade, title cards, text overlay, morphing, montage, jump cut, crossfade, blurry, watermark, film borders, film strip, film perforations, sprockets, sprocket holes, black border, frame border';
+  const fullNeg = item.negativePrompt ? `${item.negativePrompt}, ${defaultNeg}` : defaultNeg;
 
   const payload = {
     instances: [{ prompt: cleanPrompt }],
     parameters: {
       aspectRatio: '16:9',
       durationSeconds: 4,
-      negativePrompt: 'transitions, cuts, fade in, fade out, black screen, opening fade, title cards, text overlay, morphing, montage, jump cut, crossfade, blurry, watermark, film borders, film strip, film perforations, sprockets, sprocket holes, black border, frame border'
+      negativePrompt: fullNeg
     }
   };
 

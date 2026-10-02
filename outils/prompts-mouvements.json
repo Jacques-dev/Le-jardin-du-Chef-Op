@@ -7,7 +7,8 @@
   {
     "id": "panoramique",
     "nom": "Panoramique horizontal",
-    "prompt": "Stationary camera on a bolted tripod with zero lateral movement. The camera is fixed in the center of a spacious library, perfectly stationary without rolling or tracking sideways. The camera only rotates horizontally on its own central axis from left to right, panning smoothly across bookshelves to reveal a scholar reading a heavy ancient book at a desk. Pure rotation on a fixed pivot, zero camera translation, 35mm film, 16:9 widescreen."
+    "prompt": "Camera pan right. A slow steady tripod pan pivoting horizontally from left to right. Stationary camera on a fixed tripod swivels smoothly across an opulent sunlit library, panning from antique globe to a scholar seated at a wooden desk reading a large book. Pure horizontal tripod yaw rotation, locked camera base, 35mm cinema aesthetic, 16:9 widescreen",
+    "negativePrompt": "dolly, tracking shot, trucking shot, camera translation, lateral movement, sliding camera, forward movement, walking, moving camera base"
   },
   {
     "id": "tilt",
@@ -97,6 +98,7 @@
   {
     "id": "tonneau",
     "nom": "Rotation sur l'axe (tonneau)",
-    "prompt": "A disorienting cinematic Dutch barrel roll shot: camera focuses on an astronaut floating weightlessly inside a circular space station corridor, rotating 180 degrees continuously on its optical axis so the ceiling and floor swap upside down, Inception style, 16:9 widescreen."
+    "prompt": "Camera barrel roll. Camera rotates 180 degrees continuously clockwise on the optical Z-axis, spinning the entire image completely upside down. Looking down a grand hotel corridor at a standing guest as the floor, walls and ceiling rotate 180 degrees around the center of the frame. Inception zero-gravity Dutch roll, optical barrel roll rotation, 35mm film, 16:9 widescreen",
+    "negativePrompt": "static camera, level horizon, flat angle, upright horizon, zero roll, fixed orientation"
   }
 ]
