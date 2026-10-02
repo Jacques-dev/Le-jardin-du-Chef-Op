@@ -112,7 +112,7 @@
   {
     "id": "broad",
     "nom": "Éclairage large (broad)",
-    "prompt": "Cinematic 35mm film still, medium close-up bust portrait of a character in three-quarters view: head and gaze turned 30 degrees to the left of the frame (viewer's left), in the exact same head orientation as short lighting. Authentic broad lighting cinematography setup: the key light is positioned on the right side of the frame (viewer's right at +45 degrees, elevated 30 degrees). The light directly illuminates the broad cheek facing the camera (on the viewer's right), making it bright and open. The narrow cheek turned away to the left (viewer's left) falls into soft shadow. Warm intimate interior, cinematic portraiture, subtle 35mm grain, 16:9 widescreen. Head turned to the left, light coming from the right."
+    "prompt": "Cinematic 35mm film still, medium close-up bust portrait of a character in three-quarters view: head and gaze turned 30 degrees to the left. Strong textbook broad lighting (éclairage large) setup: single directional key light from the right (+45 degrees, elevated 30 degrees). The entire broad cheek facing the camera (right cheek) is bathed in luminous bright light. The nose casts a distinct shadow to the left, plunging the narrow far cheek (on the left side of frame) into deep shadow. Clean dark studio background with subtle warm gradient, no lamps, high contrast cinema lighting, Kodak 35mm grain, 16:9 widescreen."
   },
   {
     "id": "split",
