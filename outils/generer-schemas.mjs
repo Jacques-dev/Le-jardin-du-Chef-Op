@@ -35,7 +35,7 @@ export const SCHEMAS_PROMPTS = {
   broad: {
     id: "broad",
     nom: "Éclairage large (broad)",
-    prompt: "Cinematic 35mm film still, medium close-up bust portrait of a character. Torso and shoulders facing forward toward the camera. Head and gaze turned 30 degrees to the left (looking towards frame-left). Directional key light is placed on the front-RIGHT side of the frame (camera-right, azimuth 45 degrees, elevated 30 degrees). The light shines from the right side onto the face, beautifully and smoothly illuminating the broad camera-facing side of the face (his left cheek). The opposite far cheek (his right cheek, turned towards the left) is in soft natural shadow. Authentic textbook broad lighting setup (éclairage large), flattering cinema studio portrait, warm skin tones, clean dark neutral background, Kodak 35mm grain, 16:9 widescreen."
+    prompt: "Cinematic 35mm film still portrait of authentic broad lighting (éclairage large). Bust portrait of an actor with body and shoulders facing forward and head turned 30 degrees to the left. A single directional key light is positioned on the front-right side of the frame (camera right, azimuth +45 degrees, elevated 30 degrees). The light illuminates the broad side of the face facing the camera (his left cheek, right side of image). The narrow receding side of his face (his right cheek, left side of image) is in soft shadow, with nose casting a shadow to the left. Warm studio portrait, Kodak 35mm grain, 16:9 widescreen."
   },
   split: {
     id: "split",

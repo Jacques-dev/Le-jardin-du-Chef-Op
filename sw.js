@@ -1,5 +1,5 @@
 // Généré par outils/generer-sw.mjs — ne pas modifier à la main
-const VERSION = 'jco-56e41bb17c';
+const VERSION = 'jco-861aae7193';
 const PRECACHE = ["./",
   "./css/app.css",
   "./fonts/fraunces-latin-opsz-normal.woff2",
@@ -119,6 +119,11 @@ const PRECACHE = ["./",
   "./js/tools.js",
   "./js/ui.js",
   "./manifest.webmanifest",
+  "./scratch/broad_hard_shadow.jpg",
+  "./scratch/broad_with_ref.jpg",
+  "./scratch/ref3d.png",
+  "./scratch/test_broad_1.jpg",
+  "./scratch/test_broad_2.jpg",
   "./vendor/three.bundle.js",
   "./videos/techniques/camera-epaule.mp4",
   "./videos/techniques/camera-tremblee.mp4",
