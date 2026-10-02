@@ -1,5 +1,5 @@
 // Généré par outils/generer-sw.mjs — ne pas modifier à la main
-const VERSION = 'jco-3094765d48';
+const VERSION = 'jco-089570ed5b';
 const PRECACHE = ["./",
   "./css/app.css",
   "./fonts/fraunces-latin-opsz-normal.woff2",
