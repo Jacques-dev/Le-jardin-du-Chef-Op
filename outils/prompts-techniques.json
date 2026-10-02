@@ -95,14 +95,34 @@
     "prompt": "A richly detailed cinematic 35mm film still from a virtuosic continuous sequence shot. Multiple layers of action in an opulent 1920s jazz club or theater backstage, vibrant actors and musicians moving dynamically through the frame, lush lighting, Alfonso Cuarón style staging."
   },
   {
+    "id": "butterfly",
+    "nom": "Éclairage papillon (Paramount)",
+    "prompt": "Cinematic 35mm film still, medium close-up glamour portrait of an elegant woman facing directly forward into the camera lens, eye-level, perfectly centered. Master cinematography Hollywood 1930s Paramount lighting setup: a single high key light positioned directly on camera axis elevated 50 degrees above the lens. High sculpted cheekbones and defined jawline, with a tiny, subtle, clean symmetrical downward shadow cast directly beneath the septum of the nose and a soft shadow under the lower lip. The nose shadow is small and discreet, never reaching the upper lip. Dark luxurious background with soft warm backlight separation, beautiful iris catchlights, Kodak 35mm film texture, 16:9 widescreen. Strict negative rule: no insect, no butterfly wings, no mustache, no face paint, no insect shapes on the skin."
+  },
+  {
     "id": "loop",
     "nom": "Éclairage en boucle (loop)",
-    "prompt": "Cinematic 35mm film still portrait of an elegant character in a movie scene. Directional key light creates a delicate subtle curved shadow beside the nose on the cheek, warm soft lighting, cinematic Kodak Portra color grading, master cinematography, 16:9 aspect ratio."
+    "prompt": "Cinematic 35mm film still, medium close-up portrait of an actor facing towards the camera in a moody dark cinematic interior studio. Classic cinema portrait lighting: key light positioned at a 35-degree angle to the side and slightly elevated above eye level at 30 degrees creates clear directional modeling, casting a realistic subtle small diagonal drop shadow from the base of the nose pointing down towards the corner of the lip, leaving a wide clear illuminated patch on the cheek without connecting to the cheekbone shadow. Soft fill light on the shadow side. High-end film cinematography, natural skin texture, Kodak Portra 35mm look, 16:9 widescreen. Negative rule: no drawn lines, no curly shapes, no figure-eight, no loops drawn on face, no tattoos, no symbols, pure realistic optical shadow only."
   },
   {
     "id": "short",
     "nom": "Éclairage court (short)",
-    "prompt": "Cinematic 35mm film still dramatic portrait of a character in a moody interior. Directional lighting where the side of the face turned away from the camera is illuminated, leaving the front cheek in atmospheric shadow, moody chiaroscuro contrast, 35mm film grain, 16:9 widescreen."
+    "prompt": "Cinematic 35mm film still, dramatic medium close-up bust portrait of a character in three-quarters view: head and body turned 35 degrees to the side relative to the camera. Strong high contrast short lighting setup: the broad cheek facing the camera is completely in dark moody chiaroscuro shadow, while a crisp directional key light strikes the far narrow cheek and profile edge from behind-side. Only the narrow far cheekbone and the crisp edge of the nose bridge catch the light, sculpting a dramatic slimming silhouette. Low ambient fill, atmospheric dark interior, 35mm grain, 16:9 widescreen. Not a profile view: clear three-quarter angle showing both eyes."
+  },
+  {
+    "id": "broad",
+    "nom": "Éclairage large (broad)",
+    "prompt": "Cinematic 35mm film still, medium close-up portrait of a character in three-quarters view: head turned 35 degrees to the side relative to the camera in the exact same three-quarter pose as short lighting. Authentic broad lighting cinematography setup: the key light is placed on the camera side, illuminating the broad cheek that faces the camera. The wide cheek facing the lens is bathed in radiant light, making the face look full and open, while the narrow cheek receding into perspective falls into soft dimensional shadow. Warm intimate interior, cinematic portraiture, subtle 35mm grain, 16:9 widescreen. Not a frontal view, not a profile: three-quarters angle."
+  },
+  {
+    "id": "split",
+    "nom": "Éclairage divisé (split)",
+    "prompt": "Cinematic 35mm film still, intense medium close-up portrait of a character looking directly straight ahead into the camera lens, head-on frontal view. Authentic textbook split lighting setup: a single hard key light placed at exactly 90 degrees directly to one side of the face at eye level, with zero fill light on the opposite side. The vertical center of the face creates a razor-sharp division line down the forehead and nose: exactly half the face is illuminated in crisp high-contrast light, while the other entire half is plunged into pure velvety pitch-black darkness. Graphic film noir aesthetic conveying profound inner duality, rich blacks, 35mm film texture, 16:9 widescreen."
+  },
+  {
+    "id": "laterale",
+    "nom": "Lumière latérale rasante",
+    "prompt": "Cinematic 35mm film still, intense close-up portrait of a weathered, rugged character facing forward. Authentic raking side light cinematography setup (lumière latérale rasante): a single hard, low-angle directional light positioned at a sharp 80-degree side angle skimming horizontally across the facial skin from one side. One side is raked by grazing light accentuating skin texture, deep wrinkles, and facial relief, while the other side falls into moody shadow. Gritty cinema realism, tactile high contrast, 35mm Kodak grain, 16:9 widescreen. Clean film frame: no text, no subtitles, no borders, no sprocket holes."
   },
   {
     "id": "rebond",
