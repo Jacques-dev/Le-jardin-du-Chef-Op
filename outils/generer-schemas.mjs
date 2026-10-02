@@ -35,7 +35,7 @@ export const SCHEMAS_PROMPTS = {
   broad: {
     id: "broad",
     nom: "Éclairage large (broad)",
-    prompt: "Cinematic 35mm film still, medium close-up bust portrait. The actor's chest and shoulders are facing directly forward toward the camera (squared forward body). The actor's head is turned 30 degrees to the left. A single soft key light is placed on the front-right side at +45 degrees (elevated 30 degrees). The light openly illuminates the broad right cheek facing the camera, giving the face a full, open, flattering illumination. The nose casts a gentle shadow to the left, and the narrow far cheek on the left is in soft shadow. Clean warm studio background, 35mm film texture, 16:9 widescreen aspect ratio. Exact broad lighting setup."
+    prompt: "Cinematic 35mm film still, medium close-up portrait of a character. Torso and shoulders are positioned directly forward toward the camera (squared body). The head is turned 30 degrees to the left. Master broad lighting setup: a soft key light at +45 degrees on the front-right illuminates the broad right cheek and the entire forehead with soft, smooth, flattering light. The entire forehead is completely clear and smoothly illuminated with no diagonal shadows, no harsh lines, and no obstructions. The nose casts a subtle soft shadow to the left, and the narrow far cheek is in soft shadow. Flattering cinema studio portraiture, warm skin tones, clean dark neutral background, Kodak 35mm grain, 16:9 widescreen."
   },
   split: {
     id: "split",
@@ -62,7 +62,7 @@ export async function generateSchema(id, customSuffix = '') {
     console.error(`Inconnu: ${id}`);
     return null;
   }
-  const prompt = customSuffix ? `${schema.prompt} ${customSuffix}` : schema.prompt;
+  const prompt = customSuffix || schema.prompt;
   console.log(`\n🎨 Génération pour : ${schema.nom} (${id})...`);
   const url = `https://generativelanguage.googleapis.com/v1beta/${MODEL}:generateContent?key=${key}`;
   const body = {
@@ -83,6 +83,7 @@ export async function generateSchema(id, customSuffix = '') {
   const parts = json.candidates?.[0]?.content?.parts || [];
   const imgPart = parts.find(p => p.inlineData?.data);
   if (!imgPart) {
+    console.error("Détail réponse API:", JSON.stringify(json, null, 2));
     throw new Error("Aucune image renvoyée par Gemini.");
   }
 
