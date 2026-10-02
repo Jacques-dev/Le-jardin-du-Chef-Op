@@ -187,11 +187,13 @@ export function cameraView({ h, tilt, roll = 0, D, vfov = 44, x: X, y: Y, w: W, 
 // ======================================================================
 // 3. VUES DE DESSUS (points de vue, mouvements, plans de feu)
 // ======================================================================
-function personTop(x, y, rot = 0, label = '', hl = false) {
+function personTop(x, y, rot = 0, label = '', hl = false, headYaw = 0) {
   return `<g transform="translate(${x} ${y}) rotate(${rot})">
     <ellipse class="${hl ? 'i-acc' : 'i-fig2'}" cx="0" cy="0" rx="8" ry="3.8"/>
-    <circle class="i-skin" cx="0" cy="0" r="3.6"/>
-    <path class="i-skin" d="M-1.2,-3.3 L0,-5.4 L1.2,-3.3 Z"/>
+    <g transform="rotate(${headYaw})">
+      <circle class="i-skin" cx="0" cy="0" r="3.6"/>
+      <path class="i-skin" d="M-1.2,-3.3 L0,-5.4 L1.2,-3.3 Z"/>
+    </g>
   </g>${label ? `<text class="i-txt" text-anchor="middle" x="${x}" y="${y + 12}">${label}</text>` : ''}`;
 }
 function camTop(x, y, rot = 0, fov = 40, len = 40, label = '') {
@@ -421,7 +423,7 @@ export function plot(rig, label = '', opts = {}) {
       if (extra) labels += `<text class="i-txt i-cap" x="${lx}" y="${ly + 9}" text-anchor="${anchor}">${extra}</text>`;
     }
   });
-  s += beams + `<g transform="translate(${cx} ${cy}) scale(1.5) translate(${-cx} ${-cy})">${personTop(cx, cy, 180 - (rig.yaw || 0))}</g>` + lamps;
+  s += beams + `<g transform="translate(${cx} ${cy}) scale(1.5) translate(${-cx} ${-cy})">${personTop(cx, cy, 180, '', false, -(rig.yaw || 0))}</g>` + lamps;
   s += camTop(cx, 93, 0, 36, 8) + `<text class="i-txt i-cap" x="${cx - 6}" y="98" text-anchor="end">caméra</text>` + labels;
   return wrap('0 0 160 100', `<defs>${defs}</defs>` + s, label || 'Plan de feu', 'plot');
 }

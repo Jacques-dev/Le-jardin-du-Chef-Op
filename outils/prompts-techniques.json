@@ -112,7 +112,7 @@
   {
     "id": "broad",
     "nom": "Éclairage large (broad)",
-    "prompt": "Cinematic 35mm film still portrait. Subject's head and gaze are turned 30 degrees to the left (looking away from the light). A single strong key light is placed on the RIGHT side (+45 degrees) of the camera. The light directly hits the broad right cheek facing the camera, fully illuminating the right cheek, right jaw, and right temple with bright radiant light. The nose casts a dark shadow towards the left. The narrow far cheek (on the left side of the frame) is in deep, dark shadow with zero light. Authentic broad lighting: camera-facing cheek is bright, far cheek is dark in shadow. Clean dark background, 35mm Kodak film grain, 16:9 widescreen."
+    "prompt": "Cinematic 35mm film still, medium close-up bust portrait. The actor's chest and shoulders are facing directly forward toward the camera (squared forward body). The actor's head is turned 30 degrees to the left. A single soft key light is placed on the front-right side at +45 degrees (elevated 30 degrees). The light openly illuminates the broad right cheek facing the camera, giving the face a full, open, flattering illumination. The nose casts a gentle shadow to the left, and the narrow far cheek on the left is in soft shadow. Clean warm studio background, 35mm film texture, 16:9 widescreen aspect ratio. Exact broad lighting setup."
   },
   {
     "id": "split",
