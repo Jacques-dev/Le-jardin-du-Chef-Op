@@ -2,7 +2,7 @@
 // Usage : node outils/generer-sw.mjs   (à relancer après chaque modification du site)
 import fs from 'fs'; import path from 'path'; import crypto from 'crypto'; import { fileURLToPath } from 'url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const skip = /^(outils|\.git|\.nojekyll|\.env|\.gitignore|node_modules|README|CARTOGRAPHIE|_test|lancer-)|sw\.js$/;
+const skip = /^(outils|scratch|\.git|\.nojekyll|\.env|\.gitignore|node_modules|README|CARTOGRAPHIE|_test|lancer-)|sw\.js$/;
 const files = [];
 (function walk(d) { for (const f of fs.readdirSync(d)) { const p = path.join(d, f), r = path.relative(root, p).split(path.sep).join('/'); if (skip.test(r)) continue; if (fs.statSync(p).isDirectory()) walk(p); else files.push(r); } })(root);
 files.sort();
