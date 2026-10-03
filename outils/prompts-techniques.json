@@ -2,7 +2,7 @@
   {
     "id": "rembrandt",
     "nom": "Éclairage Rembrandt",
-    "prompt": "A cinematic 35mm film still of dramatic Rembrandt lighting (éclairage Rembrandt). Close-up portrait of a thoughtful character in a dark interior. A single key light creates the classic illuminated inverted triangle of light on the cheek on the shadow side below the eye, deep rich chiaroscuro shadows, Gordon Willis style cinematography, subtle 35mm grain."
+    "prompt": "Cinematic 35mm film still portrait, 16:9 widescreen, bust portrait of a mature male actor. Authentic textbook Rembrandt lighting (éclairage Rembrandt): a single directional key light positioned at camera-right (+48 degrees azimuth, 42 degrees elevation). The right side of his face (viewer's right side) is warmly illuminated. The left side of his face (viewer's left side) is submerged in deep chiaroscuro shadow, with a distinct, enclosed, small illuminated triangle of light on the shadow cheek beneath the eye, formed by the nose shadow connecting solidly to the cheek shadow. Catchlights reflected in both eyes. Subtle dark studio background, rich cinematic contrast, Kodak 35mm grain, no text, no borders."
   },
   {
     "id": "clair-obscur",

@@ -22,6 +22,11 @@ if (!match) {
 const key = match[1].trim().replace(/^["']|["']$/g, '');
 
 export const SCHEMAS_PROMPTS = {
+  rembrandt: {
+    id: "rembrandt",
+    nom: "Éclairage Rembrandt",
+    prompt: "Cinematic 35mm film still portrait, 16:9 widescreen, bust portrait of a mature male actor. Authentic textbook Rembrandt lighting (éclairage Rembrandt): a single directional key light positioned at camera-right (+48 degrees azimuth, 42 degrees elevation). The right side of his face (viewer's right side) is warmly illuminated. The left side of his face (viewer's left side) is submerged in deep chiaroscuro shadow, with a distinct, enclosed, small illuminated triangle of light on the shadow cheek beneath the eye, formed by the nose shadow connecting solidly to the cheek shadow. Catchlights reflected in both eyes. Subtle dark studio background, rich cinematic contrast, Kodak 35mm grain, no text, no borders."
+  },
   butterfly: {
     id: "butterfly",
     nom: "Éclairage papillon (Paramount)",
