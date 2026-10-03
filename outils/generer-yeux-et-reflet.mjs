@@ -18,7 +18,7 @@ export const NEW_TECHNIQUES = [
   {
     id: "yeux-egalite",
     nom: "Lignes des yeux alignées",
-    prompt: "Cinematic 35mm film still, 16:9 widescreen, medium shot of three business partners or detectives sitting across a polished wooden conference table. Their heads are framed so that their eyelines are strictly aligned on the exact same horizontal level across the frame, creating perfect compositional symmetry and psychological equality. Crisp cinematic lighting, intense focused gazes, David Fincher cinematography, natural film grain, no text."
+    prompt: "Cinematic movie photograph, full bleed 16:9 widescreen composition completely filling the frame edge-to-edge with no black bars and no letterbox. In an epic sci-fi imperial throne room, three monarchs sit side-by-side on three monumental ornate thrones: one ruler on the left, one in the center, and one on the right. All three monarchs sit upright at the exact same height, so that their eyelines form a perfectly horizontal, strictly level line across the entire width of the frame, visually establishing absolute equality and balance of power. Symmetrical grand staging, majestic architecture with fluted columns and warm golden sidelight, rich velvety robes, 35mm film texture. Strict negative rules: absolutely no black bars at top or bottom, no letterbox, no pillarbox, full bleed 16:9 only, no text, no words, no subtitles, no white lines, no graphic overlays."
   },
   {
     id: "yeux-dominant",
