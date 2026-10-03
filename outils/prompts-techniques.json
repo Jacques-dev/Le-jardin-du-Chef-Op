@@ -102,7 +102,7 @@
   {
     "id": "loop",
     "nom": "Éclairage en boucle (loop)",
-    "prompt": "Cinematic 35mm film still, medium close-up portrait of an actor facing towards the camera in a moody dark cinematic interior studio. Classic cinema portrait lighting: key light is positioned on the right side of the frame (viewer's right) at a 32-degree angle and slightly elevated at 28 degrees. The light casts a subtle, realistic, small diagonal drop shadow from the base of the nose pointing down towards the left corner of the lip (viewer's left), leaving a clear illuminated area on the left cheek without connecting to the cheek shadow. Gentle fill light on the left side. High-end film cinematography, natural skin texture, Kodak Portra 35mm look, 16:9 widescreen. Negative rule: no drawn lines, no curly shapes, no figure-eight, no loops drawn on face, no tattoos, pure optical natural shadow only."
+    "prompt": "Cinematic 35mm film portrait, 16:9 widescreen, medium close-up bust shot of a handsome clean-shaven actor facing straight forward into the camera lens. Hollywood studio loop lighting: Directional key light at camera-right (viewer's right, azimuth +32 degrees, elevation 28 degrees) brightly keying the right side of the face, and soft fill light at camera-left (-35 degrees, 10 degrees elevation) keeping the left side open and natural. The nose casts a distinct small diagonal drop shadow pointing downward-left toward the left corner of the mouth, completely detached from the cheek shadow. Crisp white catchlights in both pupils, smooth clean-shaven skin, dark minimalist studio background, 35mm film texture."
   },
   {
     "id": "short",
