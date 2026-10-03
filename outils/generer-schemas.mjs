@@ -50,7 +50,7 @@ export const SCHEMAS_PROMPTS = {
   loop: {
     id: "loop",
     nom: "Éclairage en boucle (loop)",
-    prompt: "Cinematic 35mm film still, medium close-up portrait of an actor facing towards the camera in a moody dark cinematic interior studio. Classic cinema portrait lighting: key light is positioned on the right side of the frame (viewer's right) at a 32-degree angle and slightly elevated at 28 degrees. The light casts a subtle, realistic, small diagonal drop shadow from the base of the nose pointing down towards the left corner of the lip (viewer's left), leaving a clear illuminated area on the left cheek without connecting to the cheek shadow. Gentle fill light on the left side. High-end film cinematography, natural skin texture, Kodak Portra 35mm look, 16:9 widescreen. Negative rule: no drawn lines, no curly shapes, no figure-eight, no loops drawn on face, no tattoos, pure optical natural shadow only."
+    prompt: "Cinematic film photograph, 16:9 widescreen, bust portrait. An actor facing forward towards the camera in a dark studio. Demonstration of classic loop lighting: A key light from the front-right (+30° to +35° angle, 30° elevation) sculpts the face with a soft, small nose drop shadow pointing diagonally towards the opposite lip corner. Fill light on the front-left keeps the shadow side soft and open. Catchlights present in the upper part of both pupils. Flattering and natural Hollywood portrait lighting. Dark neutral background, 35mm film texture."
   },
   laterale: {
     id: "laterale",
